@@ -7,5 +7,25 @@ window.addEventListener('scroll', () => {
     } else {
         content.classList.remove('scrolled');
     }
-});  
+}); 
+
+//--Hiển thị list location start_end
+const searchLocation = document.querySelector('.search_location');
+const listStart = document.querySelector('.list_start');
+
+listStart.classList.add('hidden');
+
+document.addEventListener('click', (event) => {
+    const isClickInside = searchLocation.contains(event.target);
+  
+    if (!isClickInside) {
+      listStart.classList.add('hidden');
+    }
+  });
+
+searchLocation.addEventListener("click", function() {
+    listStart.classList.toggle("hidden");
+  });
+
+
 
