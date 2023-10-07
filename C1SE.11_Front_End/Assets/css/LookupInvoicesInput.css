@@ -1,0 +1,324 @@
+.Content_invoice{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back_invoice{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+.back_invoice img{
+    width: 28px;
+    height: 28px;
+}
+.back_iconcontent{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    color: #848181;
+}
+.content_searchInvoice{
+    width: 100%;
+    height: 60px;
+}
+.content_searchInvoice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_searchInvoice{
+    margin-right: 10px;
+}
+.content_invoicetext{
+color: #848181;
+text-align: center;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+.content_searchInvoice img{
+    width: 46px;
+}
+.inputInvoice_verification{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form_iconchoose{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: solid 1px #848181;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.descripton_content{
+    height: auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color:#949191 ;
+}
+.descripton_content p{
+    text-align: center;
+}
+
+.img_contentInvoice{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_contentInvoice img{
+    width: 120px;
+}
+.content_invoicechoose{
+    font-size: 16px;
+    font-weight: bold;
+    color:#949191 ;
+}
+.icon_verification{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.formInput_verification{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput_content{
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.formInput_content form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formInput_content label{
+    display: block; 
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #949191;
+}
+.formInput_content input{
+    display: block; 
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    border: solid 1px #949191;
+    box-shadow:2px 2px 2px rgba(105, 104, 104, 0.5);
+}
+.searchInvoices_code{
+    width: 200px;
+    height: 70px;
+    border: solid 2px #B49425;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #B49425;
+
+}
+.searchInvoices_code img{
+    width: 30px;
+}
+.information_invoice{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information_invoice p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #949191;
+    margin-top: 18px;
+}
+.content_inforInvoice{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.text_infor{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text_infor form{
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.text_infor label {
+    width: 200px !important;
+    color: #949191;
+    font-weight: bold;
+    display: block; /* Hiển thị label như một phần tử block */
+    width: 150px; /* Độ rộng của label */
+    float: left; /* Đẩy label sang bên trái */
+    clear: both; /* Xóa bỏ các float trước đó để đảm bảo mỗi label và input nằm trên cùng một dòng */
+    margin-right: 40px; /* Khoảng cách bên phải giữa label và input */
+}
+
+.text_infor input {
+    display: block; /* Hiển thị input như một phần tử block */
+    width: 380px; /* Độ rộng của input là 100% trừ đi tổng độ rộng của label và margin */
+    height: 30px;
+    margin-bottom: 10px; /* Khoảng cách bên dưới của input */
+}
+.image_function{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image_customerinvoice{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow:5px 5px 10px rgba(105, 104, 104, 0.5);
+
+}
+.image_customerinvoice img{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+}
+.tickets_status{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tickets_status .status{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tickets_status .status img{
+    width: 36px;
+}
+.tickets_status .status p{
+    margin-top: 0;
+    font-size: 18px;
+    
+}
+.update_tickets{
+    border: solid 2px #62BC5A;
+}
+.update_tickets>p{
+    color: #62BC5A;
+}
+.cancel_tickets{
+    border: solid 2px #E21B1B;
+}
+.cancel_tickets>p{
+    color: #E21B1B;
+}
+.note_function{
+    width: 100%;
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.note_big{
+    width: 15%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note_big>p{
+    all: unset;
+    font-size: 16px;
+    color: #E21B1B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.note_content{
+    width: 83%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.note_content>p{
+    all: unset;
+    font-size: 16px;
+    color: #949191;
+    margin-top: 12px;
+}
+.see_policies{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.infor_policiessee{
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.infor_policiessee img{
+    width: 30px;
+    height: 30px;
+}
+.infor_policiessee>p{
+    all: unset;
+    font-size: 16px;
+    color: #949191;
+}
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/HomePage.css">
+    <link rel="stylesheet" href="./css/LookupInvoicesQR.css">
+    <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#">
+    
+</head>
+<body>
+    <!-- ----------------------------------HEADER----------------------------------- -->
+    <header>
+        <div class="header_logo">
+            <a href="#">
+                <img src="./image/Header/Logo.png" alt="Logo_System">
+            </a>
+        </div>
+        <div class="header_category">
+            <a href="#">Tra cứu hoá đơn</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Trở thành đối tác</a>
+        </div>
+        <div class="header_icons">
+            <div class="header_icons_hotline">
+                <i class="ti-mobile"></i>
+                <p>Hotline</p>
+            </div>
+            <div class="header_icons_ct">
+                <a href="#">
+                    <img src="./image/Header/world.png" alt="user_icons">
+                </a>
+                <a href="#">
+                    <img src="./image/Header/profile.png" alt="user_icons">
+                    <p>USER</p>
+                </a>
+                
+            </div>
+        </div>
+    </header>
+    <!-- ----------------------------------Content----------------------------------- -->
+    <div class="Content_invoice">
+        <div class="back_invoice">
+            <div class="back_iconcontent">
+                <img src="./image/Content/Invoice/back.png" alt="back">
+                <p>Back</p>
+            </div>
+        </div>
+        <div class="content_searchInvoice">
+            <div class="image_searchInvoice">
+                <img src="./image/Content/Invoice/bill.png" alt="">
+            </div>
+            <div class="content_invoicetext">
+                <p>Tra cứu hoá đơn</p>
+            </div>
+        </div>
+        <div class="inputInvoice_verification">
+            <div class="icon_verification">
+                <div class="form_iconchoose">
+                    <div class="img_contentInvoice">
+                        <img src="./image/Content/Invoice/qr-code (1).png" alt="dace">
+                    </div>
+                    <div class="content_invoicechoose">
+                        <p>Quét mã QR của vé</p>
+                    </div>
+                </div>
+                <div class="descripton_content">
+                    <p>Nhập mã hoá đơn in trên QR code để tiến hành tra cứu</p>
+                </div>
+            </div>
+            <div class="camera_verification">
+                <div class="camera_content">
+
+                </div>
+            </div>
+        </div>
+        <div class="information_invoice">
+            <p>Thông tin hoá đơn</p>
+            <div class="content_inforInvoice">
+                <div class="text_infor">
+                    <form action="#">                      
+                        <label for="fname">Họ và tên khách hàng</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="fsdt">Số điện thoại</label>
+                        <input type="text" id="fsdt" name="fsdt"><br><br>
+                        <label for="lmahd">Mã hoá đơn</label>
+                        <input type="text" id="lmahd" name="lmahd" disabled><br><br>
+                        <label for="lngaydat">Ngày đặt vé</label>
+                        <input type="text" id="lngaydat" name="lngaydat" disabled><br><br>
+                        <label for="fxuatphat">Nơi xuất phát</label>
+                        <input type="text" id="fxuatphat" name="fxuatphat"><br><br>
+                        <label for="fnoiden">Nơi đến</label>
+                        <input type="text" id="fnoiden" name="fnoiden"><br><br>
+                        <label for="lnhaxe">Nhà xe</label>
+                        <input type="text" id="lnhaxe" name="lnhaxe" disabled><br><br>
+                        <label for="lbienso">Biển số xe</label>
+                        <input type="text" id="lbienso" name="lbienso" disabled><br><br>
+                        <label for="lgiuongso">Giường số</label>
+                        <input type="text" id="lgiuongso" name="lgiuongso" disabled><br><br>
+                        <label for="lgiave">Giá vé</label>
+                        <input type="text" id="lgiave" name="lgiave" disabled><br><br>
+                        <label for="ltinhtrangve">Tình trạng vé</label>
+                        <input type="text" id="ltinhtrangve" name="ltinhtrangve" disabled><br><br>
+                      </form>
+                </div>
+                <div class="image_function">
+                    <div class="image_customerinvoice">
+                        <img src="./image/Content/Invoice/BaoKiem.jpg" alt="ImageCustomer">
+                    </div>
+                    <div class="tickets_status">
+                        <div class="update_tickets status">
+                            <img src="./image/Content/Invoice/updated.png" alt="update">
+                            <p>Cập nhật vé</p>
+                        </div>
+                        <div class="cancel_tickets status">
+                            <img src="./image/Content/Invoice/x-button.png" alt="update">
+                            <p>Huỷ vé</p>
+                        </div>
+                    </div>
+                    <div class="note_function">
+                        <div class="note_big">
+                            <p>Lưu ý :</p>
+                        </div>
+                        <div class="note_content">
+                            <p>Vui lòng cập nhật thay đổi vé ít nhất 3h trước khi xe xuất phát, chúng tôi sẽ liên hệ với bạn để xác nhận lại thông tin trong thời gian ngắn nhất</p>
+                            <p>Trong trường hợp huỷ vé, nếu bạn xác nhận huỷ vé. Bạn sẽ phải chịu một khoản phí giữ vé theo chính sách của Express Tickets.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see_policies" >
+            <div class="infor_policiessee">
+                <img src="./image/Content/Invoice/point.png" alt="">
+                <p>Xem thêm về chính sách...</p> 
+            </div>
+        </div>
+        <div style="width: 100%; height: 70px;"></div>
+    </div>
+        <!-- ----------------------------------FOOTER----------------------------------- -->
+        <div class="footer">
+            <div class="footer_inwe">
+                <div class="footer_inwe_image">
+                    <img src="./image/Header/Logo.png" alt="">
+                </div>
+                <div class="footer_inwe_content">
+                    <p>Về chúng tôi</p>
+                </div>
+                <div class="form_infor">
+                    <div class="footer_inwe_infor">
+                        <div class="row_infor_inwe">
+                            <div class="infor_image_footer">
+                                <img src="./image/Footer/VeChungToi/bulb.png" alt="">
+                            </div>
+                            <p>Giới thiệu về hệ thống</p>
+                        </div>
+                    </div>
+                    <div class="footer_inwe_infor">
+                        <div class="row_infor_inwe">
+                            <div class="infor_image_footer">
+                                <img src="./image/Footer/VeChungToi/bus (1).png" alt="">
+                            </div>
+                            <p>Danh sách nhà xe</p>
+                        </div>
+                    </div>
+                    <div class="footer_inwe_infor">
+                        <div class="row_infor_inwe">
+                            <div class="infor_image_footer">
+                                <img src="./image/Footer/VeChungToi/bus-stop.png" alt="">
+                            </div>
+                            <p>Danh sách bến xe</p>
+                        </div>
+                    </div>
+                    <div class="footer_inwe_infor">
+                        <div class="row_infor_inwe">
+                            <div class="infor_image_footer">
+                                <img src="./image/Footer/VeChungToi/telephone.png" alt="">
+                            </div>
+                            <p>Tuyển dụng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_support">
+                <div class="infor_support">
+                    <h1>Hỗ Trợ</h1>
+                    <p>Hướng dẫn thanh toán</p>
+                    <p>Chính sách bảo mật thông tin</p>
+                    <p>Chính sách bảo mật thanh toán</p>
+                    <p>Quy trình xử lý tranh chấp và khiếu nại</p>
+                    <p>Quy chế của Express Tickets</p>
+                </div>
+            </div>
+            <div class="footer_app">
+                <p>Tải ứng dụng tại</p>
+                <div id="Apple" class="app_Content">
+                    <img src="./image/Footer/VeChungToi/app-store.png" alt="">
+                    <div class="content_download">
+                        <h1>Download ExpressTickets on</h1>
+                        <p>App Store</p>
+                    </div>
+                </div>
+                <div id="Android" class="app_Content">
+                    <img src="./image/Footer/VeChungToi/game.png" alt="">
+                    <div class="content_download">
+                        <h1>Download ExpressTickets on</h1>
+                        <p>Google Play</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_image">
+                <h1>Express Tickets</h1>
+                <p>Đưa bạn đi khắp muôn nơi</p>
+                <img src="./image/Footer/VeChungToi/VietNam.png" alt="VietNam">
+            </div>
+        </div>
+        <!-- ----------------------------------COPYRIGHT----------------------------------- -->
+        <div class="copy_right">
+            <p>Copyright © 2023 Express Tickets. Powered by Group C1SE.11</p>
+        </div>
+    
+</body>
+</html>

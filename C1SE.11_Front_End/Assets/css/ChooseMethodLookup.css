@@ -1,0 +1,112 @@
+.Content_invoice{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back_invoice{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+.back_invoice img{
+    width: 28px;
+    height: 28px;
+}
+.back_iconcontent{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    color: #848181;
+}
+.content_searchInvoice{
+    width: 100%;
+    height: 60px;
+}
+.content_searchInvoice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_searchInvoice{
+    margin-right: 10px;
+}
+.content_invoicetext{
+color: #848181;
+text-align: center;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+.content_searchInvoice img{
+    width: 46px;
+}
+.inputInvoice_verification{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputInvoice_verification .choose_verification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_facechoose{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: solid 1px #848181;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.descripton_content{
+    height: auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color:#949191 ;
+    margin-top: 10px;
+}
+.descripton_content p{
+    text-align: center;
+}
+
+.img_contentInvoice{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_contentInvoice img{
+    width: 120px;
+}
+.content_invoicechoose{
+    font-size: 16px;
+    font-weight: bold;
+    color:#949191 ;
+}
+.content_choosemethod{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #949191;
+    font-size: 18px;
+    font-weight: bold;
+}
