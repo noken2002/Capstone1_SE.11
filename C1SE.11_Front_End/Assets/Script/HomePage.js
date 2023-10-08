@@ -27,5 +27,7 @@ searchLocation.addEventListener("click", function() {
     listStart.classList.toggle("hidden");
   });
 
+  
+
 
 

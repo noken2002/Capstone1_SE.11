@@ -23,6 +23,9 @@
     margin-right: 30px;
     color: #848181;
 }
+.back_iconcontent:hover{
+    cursor: pointer;
+}
 .content_searchInvoice{
     width: 100%;
     height: 60px;
