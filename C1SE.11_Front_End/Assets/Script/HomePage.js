@@ -10,22 +10,38 @@ window.addEventListener('scroll', () => {
 }); 
 
 //--Hiển thị list location start_end
-const searchLocation = document.querySelector('.search_location');
-const listStart = document.querySelector('.list_start');
+const searchLocationStart = document.getElementById('start');
+const searchLocationEnd = document.getElementById('end');
+const listStart = document.getElementById('div_start');
+const listEnd = document.getElementById('div_end');
 
 listStart.classList.add('hidden');
+listEnd.classList.add('hidden'); // Ẩn div_end ban đầu
 
 document.addEventListener('click', (event) => {
-    const isClickInside = searchLocation.contains(event.target);
+    const isClickInsideStart = searchLocationStart.contains(event.target);
+    const isClickInsideEnd = searchLocationEnd.contains(event.target);
   
-    if (!isClickInside) {
+    if (!isClickInsideStart && !isClickInsideEnd) {
       listStart.classList.add('hidden');
+      listEnd.classList.add('hidden'); // Ẩn div_end nếu click bên ngoài
     }
-  });
+});
 
-searchLocation.addEventListener("click", function() {
+searchLocationStart.addEventListener("click", function() {
     listStart.classList.toggle("hidden");
-  });
+    listEnd.classList.add('hidden'); // Ẩn div_end khi click vào div_start
+});
+
+searchLocationEnd.addEventListener("click", function() {
+    listEnd.classList.toggle("hidden");
+    listStart.classList.add('hidden'); // Ẩn div_start khi click vào div_end
+});
+
+
+
+
+
 
   
 

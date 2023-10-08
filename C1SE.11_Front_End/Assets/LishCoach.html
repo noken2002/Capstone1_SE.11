@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/HomePage.css">
+    <link rel="stylesheet" href="./css/LishCoach.css">
+    <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#">
+    <!-- Thư viện CSS của Select2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+
+<!-- Thư viện JavaScript của Select2 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    
+</head>
+<body>
+    <!-- ----------------------------------HEADER----------------------------------- -->
+    <header>
+        <div class="header_logo">
+            <a href="#">
+                <img src="./image/Header/Logo.png" alt="Logo_System">
+            </a>
+        </div>
+        <div class="header_category">
+            <a href="./ChooseMethodLookup.html">Tra cứu hoá đơn</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Trở thành đối tác</a>
+        </div>
+        <div class="header_icons">
+            <div class="header_icons_hotline">
+                <i class="ti-mobile"></i>
+                <p>Hotline</p>
+            </div>
+            <div class="header_icons_ct">
+                <a href="#">
+                    <img src="./image/Header/world.png" alt="user_icons">
+                </a>
+                <a href="#">
+                    <img src="./image/Header/profile.png" alt="user_icons">
+                    <p>USER</p>
+                </a>
+                
+            </div>
+        </div>
+    </header>
+        <!-- ----------------------------------BANNER----------------------------------- -->
+
+    <div class="banner_list">
+        <div class="banner_imagelist">
+            <img src="./image/Banner/pexels-quý-nguyễn-17177476.jpg" alt="HaNoi">
+            <div class="banner_contentlist">
+                <div class="contentlist_welecome">
+                    <p>Welcome to HA NOI</p>
+                </div>
+                <div class="box_inforwelecome">
+                    <div class="star_welcome infor_welcome">
+                        <img src="./image/Header/placeholder.png" alt="Location_start">
+                        <p>Đà Nẵng</p>
+                    </div>
+                    <div class="line_column"></div>
+                    <div class="end_welcome infor_welcome">
+                        <img src="./image/Header/placeholder.png" alt="Location_end">
+                        <p>Hà Nội</p>
+                    </div>
+                    <div class="line_column" ></div>
+                    <div class="schedule_welcome">
+                        <img src="./image/Header/calendar.png" alt="Schedule">                        
+                        <p>T5, 23/09/2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------CONTENT----------------------------------- -->
+    <div class="contentLishCoach">
+        <div class="listcoach_contents">
+            <h1>Express Tickets - Uy tín tạo nên chất lượng</h1>
+            <p>Cam kết hoàn vé 150% nếu nhà xe không giữ vé</p>
+        </div>
+        <div class="content_coachlist">
+            <div class="filter_coach">
+                <div class="filter_content">
+                    <div class="content_filterheader">
+                        <h1>Lọc</h1>
+                        <p>Đặt lại</p>
+                    </div>
+                    <div class="content_filtername">
+                        <p>Hiển thị kết quả dựa trên lựa chọn của bạn</p>
+                    </div>
+                </div>
+                <div class="filter_list">
+                    <div class="head_filter">
+                        <p>Giờ đi</p>
+                    </div>
+                    <div class="time_frame">
+                        <div class="about_time">
+                            <div class="first_time time_start">
+                                <p>Buổi sáng</p>
+                                <p>0h:00 - 6h:00</p>
+
+                            </div>
+                            <div class="sercond_time time_start">
+                                <p>Sáng sớm</p>
+                                <p>6h:00 - 12h:00</p>
+                            </div>
+                        </div>
+                        <div class="about_time">
+                            <div class="thirth_time time_start">
+                                <p>Buổi trưa</p>
+                                <p>12h:00 - 18h:00</p>
+                            </div>
+                            <div class="four_time time_start">
+                                <p>Buổi tối</p>
+                                <p>18h:00 - 00h:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head_filter">
+                        <p>Giá vé</p>
+                    </div>
+                    <div class="filter_price">
+                        <div class="encompass_point">
+                            <div class="starting_point filter_point">
+
+                            </div>
+                            <div class="line_pointprice">
+    
+                            </div>
+                            <div class="ending_point filter_point">
+    
+                            </div>
+                        </div>
+                        <div class="price_range">
+                            <p>0đ</p>
+                            <p>3.000.000đ</p>
+                        </div>
+                        
+                    </div>
+                    <div class="head_filter">
+                        <p>Số lượng ghế</p>
+                    </div>
+                    <div class="filter_countchair">
+                        <div id="decrease-btn" class="btn_count">
+                            <p>-</p>
+                        </div>
+                        <span id="quantity">1</span>
+                        <div id="increase-btn" class="btn_count">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="head_filter">
+                        <p>Nhà xe</p>
+                    </div>
+                    <div class="partner_coach">
+                        <div class="form-container">
+                            <input type="text" id="combo-input" name="combo-input" list="options" placeholder="Nhập tên tên nhà xe cần tìm">
+                            <datalist id="options">
+                              <option value="Nhà xe Hiếu Hoa"></option>
+                              <option value="Nhà xe Đức Lộc"></option>
+                              <option value="Nhà xe Hoàng Long"></option>
+                              <option value="Nhà xe Hoàng Tuấn"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="head_filter">
+                        <p>Điểm đón</p>
+                    </div>
+            </div>
+            <div class="form_lishcoach">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------FOOTER----------------------------------- -->
+    <div class="footer">
+        <div class="footer_inwe">
+            <div class="footer_inwe_image">
+                <img src="./image/Header/Logo.png" alt="">
+            </div>
+            <div class="footer_inwe_content">
+                <p>Về chúng tôi</p>
+            </div>
+            <div class="form_infor">
+                <div class="footer_inwe_infor">
+                    <div class="row_infor_inwe">
+                        <div class="infor_image_footer">
+                            <img src="./image/Footer/VeChungToi/bulb.png" alt="">
+                        </div>
+                        <p>Giới thiệu về hệ thống</p>
+                    </div>
+                </div>
+                <div class="footer_inwe_infor">
+                    <div class="row_infor_inwe">
+                        <div class="infor_image_footer">
+                            <img src="./image/Footer/VeChungToi/bus (1).png" alt="">
+                        </div>
+                        <p>Danh sách nhà xe</p>
+                    </div>
+                </div>
+                <div class="footer_inwe_infor">
+                    <div class="row_infor_inwe">
+                        <div class="infor_image_footer">
+                            <img src="./image/Footer/VeChungToi/bus-stop.png" alt="">
+                        </div>
+                        <p>Danh sách bến xe</p>
+                    </div>
+                </div>
+                <div class="footer_inwe_infor">
+                    <div class="row_infor_inwe">
+                        <div class="infor_image_footer">
+                            <img src="./image/Footer/VeChungToi/telephone.png" alt="">
+                        </div>
+                        <p>Tuyển dụng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_support">
+            <div class="infor_support">
+                <h1>Hỗ Trợ</h1>
+                <p>Hướng dẫn thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+                <p>Chính sách bảo mật thanh toán</p>
+                <p>Quy trình xử lý tranh chấp và khiếu nại</p>
+                <p>Quy chế của Express Tickets</p>
+            </div>
+        </div>
+        <div class="footer_app">
+            <p>Tải ứng dụng tại</p>
+            <div id="Apple" class="app_Content">
+                <img src="./image/Footer/VeChungToi/app-store.png" alt="">
+                <div class="content_download">
+                    <h1>Download ExpressTickets on</h1>
+                    <p>App Store</p>
+                </div>
+            </div>
+            <div id="Android" class="app_Content">
+                <img src="./image/Footer/VeChungToi/game.png" alt="">
+                <div class="content_download">
+                    <h1>Download ExpressTickets on</h1>
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_image">
+            <h1>Express Tickets</h1>
+            <p>Đưa bạn đi khắp muôn nơi</p>
+            <img src="./image/Footer/VeChungToi/VietNam.png" alt="VietNam">
+        </div>
+    </div>
+    <!-- ----------------------------------COPYRIGHT----------------------------------- -->
+    <div class="copy_right">
+        <p>Copyright © 2023 Express Tickets. Powered by Group C1SE.11</p>
+    </div>
+    
+</body>
+<script rel="Script" src="./Script/LishCoach.js"> </script>
+</html>
+

@@ -1,0 +1,305 @@
+.banner_list{
+    width: 100%;
+    height: 450px;
+}
+.banner_imagelist{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner_imagelist img{
+    width: 100%;
+    height: 450px;
+}
+.banner_contentlist{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 450px;
+}
+.contentlist_welecome{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 320px;
+    left: 60px;
+}
+.contentlist_welecome>p{
+    color: #ffffff;
+    font-family: Courier New;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-shadow: 2px 2px #727272;
+}
+.box_inforwelecome{
+    width: 680px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #838383;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 360px;
+    left: 60px;
+    display: flex;
+}
+.infor_welcome{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.infor_welcome img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+}
+.infor_welcome>p{
+    position: absolute;
+    left: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #848181;
+}
+.schedule_welcome{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.schedule_welcome img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 18px;
+}
+.schedule_welcome>p{
+    position: absolute;
+    left: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+/* ---------------------------CONTENT_LISH_COACH----------------------------- */
+.contentLishCoach{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.listcoach_contents{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.listcoach_contents>h1{
+    color: #EBEBEB;
+    text-align: center;
+    -webkit-text-stroke: 1px #6a6a6a; /* Viền bằng 1px và màu đen */
+    text-stroke: 1px #000; /* Viền bằng 1px và màu đen (dành cho trình duyệt hỗ trợ) */   
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
+    font-size: 34px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+}
+.listcoach_contents>p{
+    margin-top: 10px;
+    color: #848181;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.content_coachlist{
+    width: 100%;
+    height: 1600px;
+    background-color: antiquewhite;
+    display: flex;
+}
+.filter_coach{
+    height: 1600px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_lishcoach{
+    height: 800px;
+    width: 75%;
+}
+.filter_content{
+    width: 70%;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #F6FAFA;
+    border: 1px solid #51A3D1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content_filterheader{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_filterheader>h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.content_filterheader>p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #43BBFF;
+    text-decoration: underline;
+}
+.content_filterheader>p:hover{
+    cursor: pointer;
+}
+.content_filtername{
+    width: 90%;
+    height: 50%;
+}
+.content_filtername>p{
+    color: #848181;
+    font-size: 16px;
+    font-weight: 100;
+}
+.filter_list{
+    width: 80%;
+    height: 600px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head_filter{
+    width: 90%;
+    color: #878787;
+    font-size: 16px;
+    font-weight: bold;
+}
+.time_frame{
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_time{
+    height: 46%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about_time .time_start{
+    height: 100%;
+    width: 46%;
+    border-radius: 5px;
+    border: 1px solid #848181;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about_time .time_start>p{
+    font-size: 16px;
+    color: #848181;
+}
+.filter_price{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.encompass_point{
+    width: 70%;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter_point{
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    border: solid 1px #333;
+    border-radius: 50%;
+}
+.line_pointprice{
+    width: 160px;
+    height: 2px;
+    background-color: #43BBFF;
+}
+.price_range{
+    width: 74%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price_range>p{
+    font-size: 16px;
+    color: #848181;
+}
+.filter_countchair{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_count{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F6FAFA;
+    border: solid 1px #6a6a6a;
+}
+.btn_count:hover{
+    cursor: pointer;
+    background-color: #e6fbfb;
+}
+.btn_count>p{
+    font-size: 18px;
+}
+.partner_coach{
+    width: 90%;
+    height: 40px;
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.form-container input{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px #838383;
+}
+
