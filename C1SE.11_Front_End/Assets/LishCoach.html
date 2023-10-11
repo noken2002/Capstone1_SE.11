@@ -158,7 +158,7 @@
                     </div>
                     <div class="partner_coach">
                         <div class="form-container">
-                            <input type="text" id="combo-input" name="combo-input" list="options" placeholder="Nhập tên tên nhà xe cần tìm">
+                            <input type="text" id="combo-input" name="combo-input" list="options" placeholder="      Nhập tên tên nhà xe cần tìm">
                             <datalist id="options">
                               <option value="Nhà xe Hiếu Hoa"></option>
                               <option value="Nhà xe Đức Lộc"></option>
@@ -168,12 +168,240 @@
                         </div>
                     </div>
                     <div class="head_filter">
-                        <p>Điểm đón</p>
+                        <p>Điểm đón xe</p>
                     </div>
-            </div>
-            <div class="form_lishcoach">
+                    <div class="point_start point">
+                        <div class="form-container">
+                            <input type="text" id="input_start" name="start-input" placeholder="           Nhập địa điểm đón xe">
+                            
+                        </div>
+                    </div>
+                    <div class="id_location">
+                        <i class="ti-location-pin"></i>
+                        <p>Sử dụng định vị để xác định địa điểm chính xác</p>
+                    </div>
+                    <div class="head_filter">
+                        <p>Điểm xuống xe</p>
+                    </div>
+                    <div class="point_end point">
+                        <div class="form-container">
+                            <input type="text" id="input_end" name="end-input" placeholder="           Nhập địa điểm xuống xe">
+                            
+                        </div>
+                    </div>
+                    <div class="head_filter">
+                        <p>Loại ghế</p>
+                    </div>
+                    <div class="check_chair">
+                        <div>
+                            <input type="checkbox" id="Check_chair1">
+                            <label for="myCheckbox">Giường nằm</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Check_chair2">
+                            <label for="myCheckbox">Ghế ngồi</label>
+                        </div>
+                    </div>
 
             </div>
+        </div>
+        <div class="form_lishcoach">
+            <div class="type_coach">
+                <div class="coach_medium choose_type">
+                    <div class="image_type">
+                        <img src="./image/Content/ListCoach/smile.png" alt="xethuong">
+                    </div>
+                    <p>Xe Thường</p>
+
+                </div>
+                <div class="line_column"></div>
+                <div class="coach_limouse choose_type">
+                    <div class="image_type">
+                        <img src="./image/Content/ListCoach/crown.png" alt="xelimouse">
+
+                    </div>
+                    <p>Xe Limouse</p>
+                </div>
+            </div>
+            <div class="space_white">
+            </div>
+            <div class="content_search">
+                <span>Kết quả tìm kiếm đi từ Đà Nẵng - Hà Nội</span>
+            </div>
+            <div class="choose_search">
+                <p>Sắp xếp theo</p>
+            </div>  
+            <div class="typesearch_choose">
+                <div class="button_choose_type">
+                    <p>Giờ đi sớm nhất</p>
+                </div>
+                <div class="button_choose_type">
+                    <p>Giờ đi muộn nhất</p>
+                </div>
+                <div class="button_choose_type">
+                    <p>Giá tăng dần</p>
+                </div>
+                <div class="button_choose_type">
+                    <p>Giá giảm dần</p>
+                </div>
+                <div class="button_choose_type">
+                    <p>Đánh giá tốt nhất</p>
+                </div>
+            </div>
+            <div class="width_line">
+            </div>
+            <div class="container_coach_partner">
+                <div class="coach_partner">
+                    <div class="start_partner_element">
+                        <img src="./image/Content/ListCoach/HoangLong(4).jpg" alt="Xe">
+                    </div>
+                    <div class="center_partner_element">
+                        <div class="infor_coach_partner">
+                            <div class="form_coach">
+                                <div class="name_coach">
+                                    <span>Hoàng Long</span>
+                                </div>
+                                <div class="acccess_coach">
+                                    <span><i class="ti-star"></i>  4.2</span>
+                                </div>
+                            </div>
+                            <span style="font-size: 16px; color: #848181;">Xe giường nằm 24 chỗ</span>
+                        </div>
+                        <div class="infor_start_trip">
+                            <div class="start_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/start (2).png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">18:30</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe trung tâm thành phố Đà Nẵng</span>
+                            </div>
+                            <div class="time_start_trip non_trip">
+                                <img src="./image/Content/ListCoach/down-arrows.png" alt="Khoang">
+                                <span style="margin-left: 10px; font-size: 16px; color: #575555;
+                                ">11h30p</span>
+                            </div>
+                            <div class="end_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/end.png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">06:00</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe Nước Ngầm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end_partner_element">
+                        <div class="container_price">
+                            <h1>Giá vé : <span>800.000đ</span></h1>
+                            <p>Thông tin chi tiết <i class="ti-angle-down"></i></p>
+                        </div>
+                        <div class="button_buy">
+                            Đặt vé
+                        </div>
+                    </div>
+                </div>
+                <div class="coach_partner">
+                    <div class="start_partner_element">
+                        <img src="./image/Content/ListCoach/HoangLong(4).jpg" alt="Xe">
+                    </div>
+                    <div class="center_partner_element">
+                        <div class="infor_coach_partner">
+                            <div class="form_coach">
+                                <div class="name_coach">
+                                    <span>Hoàng Long</span>
+                                </div>
+                                <div class="acccess_coach">
+                                    <span><i class="ti-star"></i>  4.2</span>
+                                </div>
+                            </div>
+                            <span style="font-size: 16px; color: #848181;">Xe giường nằm 24 chỗ</span>
+                        </div>
+                        <div class="infor_start_trip">
+                            <div class="start_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/start (2).png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">18:30</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe trung tâm thành phố Đà Nẵng</span>
+                            </div>
+                            <div class="time_start_trip non_trip">
+                                <img src="./image/Content/ListCoach/down-arrows.png" alt="Khoang">
+                                <span style="margin-left: 10px; font-size: 16px; color: #575555;
+                                ">11h30p</span>
+                            </div>
+                            <div class="end_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/end.png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">06:00</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe Nước Ngầm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end_partner_element">
+                        <div class="container_price">
+                            <h1>Giá vé : <span>800.000đ</span></h1>
+                            <p>Thông tin chi tiết <i class="ti-angle-down"></i></p>
+                        </div>
+                        <div class="button_buy">
+                            Đặt vé
+                        </div>
+                    </div>
+                </div>
+                <div class="coach_partner">
+                    <div class="start_partner_element">
+                        <img src="./image/Content/ListCoach/HoangLong(4).jpg" alt="Xe">
+                    </div>
+                    <div class="center_partner_element">
+                        <div class="infor_coach_partner">
+                            <div class="form_coach">
+                                <div class="name_coach">
+                                    <span>Hoàng Long</span>
+                                </div>
+                                <div class="acccess_coach">
+                                    <span><i class="ti-star"></i>  4.2</span>
+                                </div>
+                            </div>
+                            <span style="font-size: 16px; color: #848181;">Xe giường nằm 24 chỗ</span>
+                        </div>
+                        <div class="infor_start_trip">
+                            <div class="start_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/start (2).png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">18:30</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe trung tâm thành phố Đà Nẵng</span>
+                            </div>
+                            <div class="time_start_trip non_trip">
+                                <img src="./image/Content/ListCoach/down-arrows.png" alt="Khoang">
+                                <span style="margin-left: 10px; font-size: 16px; color: #575555;
+                                ">11h30p</span>
+                            </div>
+                            <div class="end_trip_icon non_trip">
+                                <img src="./image/Content/ListCoach/end.png" alt="start">
+                                <div class="form_start">
+                                    <span id="start_time">06:00</span>
+                                    <div style="width: 10px; height: 10px; background-color: #575555; border-radius: 50%;"></div>    
+                                </div>
+                                <span id="start_location">Bến xe Nước Ngầm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end_partner_element">
+                        <div class="container_price">
+                            <h1>Giá vé : <span>800.000đ</span></h1>
+                            <p>Thông tin chi tiết <i class="ti-angle-down"></i></p>
+                        </div>
+                        <div class="button_buy">
+                            Đặt vé
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
     </div>
 
