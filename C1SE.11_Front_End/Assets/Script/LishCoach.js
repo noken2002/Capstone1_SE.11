@@ -42,4 +42,56 @@ comboInput.addEventListener('input', () => {
 comboInput.addEventListener('change', () => {
   comboInput.setCustomValidity('');
 });
+
+// Lắng nghe sự kiện click trên các thẻ a
+document.getElementById('image').addEventListener('click', function() {
+  // Ẩn tất cả các div chứa nội dung
+  document.querySelectorAll('.content').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  // Hiển thị div chứa nội dung tương ứng
+  document.getElementById('imageContent').style.display = 'block';
+});
+
+document.getElementById('utilities').addEventListener('click', function() {
+  document.querySelectorAll('.content').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('utilitiesContent').style.display = 'block';
+});
+
+function open(evt, extentionsName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(extentionsName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+ // Lấy danh sách các nút và thêm sự kiện click cho chúng
+ const buttons = document.querySelectorAll(".content_coach_trip > button");
+
+ buttons.forEach(button => {
+     button.addEventListener("click", () => {
+         // Bỏ tất cả các lớp 'active' từ các nút
+         buttons.forEach(btn => btn.classList.remove("active"));
+         
+         // Thêm lớp 'active' cho nút đang được click
+         button.classList.add("active");
+     });
+ });
+
+ document.getElementById("showHideDetails").addEventListener("click", function() {
+  var inforDiv = document.querySelector(".infor_coach_trip");
+  inforDiv.classList.toggle("infor_coach_trip_after");
+});
+
+
+
   
