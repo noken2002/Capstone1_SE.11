@@ -60,19 +60,29 @@ document.getElementById('utilities').addEventListener('click', function() {
   document.getElementById('utilitiesContent').style.display = 'block';
 });
 
-function open(evt, extentionsName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(extentionsName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+document.getElementById('point').addEventListener('click', function() {
+  document.querySelectorAll('.content').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('poinContent').style.display = 'block';
+});
+
+
+document.getElementById('policy').addEventListener('click', function() {
+  document.querySelectorAll('.content').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('policyContent').style.display = 'block';
+});
+
+document.getElementById('evaluate').addEventListener('click', function() {
+  document.querySelectorAll('.content').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('evaluateContent').style.display = 'block';
+});
+
+
 
  // Lấy danh sách các nút và thêm sự kiện click cho chúng
  const buttons = document.querySelectorAll(".content_coach_trip > button");
@@ -91,6 +101,82 @@ function open(evt, extentionsName) {
   var inforDiv = document.querySelector(".infor_coach_trip");
   inforDiv.classList.toggle("infor_coach_trip_after");
 });
+
+
+//Sự kiện click chuyển task trong đặt vé
+document.getElementById('position_like').addEventListener('click', function() {
+  // Ẩn tất cả các div chứa nội dung
+  document.querySelectorAll('.booking_form').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  // Hiển thị div chứa nội dung tương ứng
+  document.getElementById('form_positionlike').style.display = 'block';
+});
+
+document.getElementById('position_on_off').addEventListener('click', function() {
+  document.querySelectorAll('.booking_form').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('form_position_onoff').style.display = 'block';
+});
+
+document.getElementById('get_infor').addEventListener('click', function() {
+  document.querySelectorAll('.booking_form').forEach(function(content) {
+      content.style.display = 'none';
+  });
+  document.getElementById('form_get_infor').style.display = 'block';
+});
+
+//Hiệu ứng khi chọn mục đặt vé
+function highlight(element) {
+  // Loại bỏ lớp CSS "highlighted" từ tất cả các thẻ có lớp "highlightable"
+  const highlightableElements = document.querySelectorAll('.conner_stt');
+  highlightableElements.forEach(el => el.classList.remove('conner_stt_after'));
+
+  // Thêm lớp CSS "highlighted" cho thẻ vừa click
+  element.classList.add('conner_stt_after');
+}
+const buttonBuy = document.querySelector('.button_buy');
+const bookingForm = document.getElementById('bookingForm');
+const tripInfor = document.getElementById('tripInfor');
+const showhided = document.getElementById('showHideDetails');
+
+// Đặt biến để theo dõi trạng thái hiển thị của form đặt vé
+let isBookingFormVisible = false;
+
+// Thêm sự kiện click cho nút Đặt vé
+buttonBuy.addEventListener('click', () => {
+  bookingForm.removeAttribute('style');
+  tripInfor.style.display = 'none';
+    // Đảm bảo nút Đặt vé đã được chọn
+    if (isBookingFormVisible) {
+        // Nếu form đang hiển thị, ẩn nó đi
+        bookingForm.style.display = 'none';
+        isBookingFormVisible = false;
+    } else {
+        // Nếu form đang ẩn, hiển thị nó
+        bookingForm.style.display = 'block';
+        isBookingFormVisible = true;
+    }
+});
+
+// Đặt biến để theo dõi trạng thái hiển thị của form đặt vé
+let isshowHide = false;
+
+// Thêm sự kiện click cho nút Đặt vé
+showhided.addEventListener('click', () => {
+  tripInfor.removeAttribute('style');  
+  bookingForm.style.display = 'none';
+    // Đảm bảo nút Đặt vé đã được chọn
+    if (isshowHide) {
+        // Nếu form đang hiển thị, ẩn nó đi
+        isshowHide = false;
+    } else {
+        // Nếu form đang ẩn, hiển thị nó
+        isshowHide = true;
+    }
+});
+
 
 
 

@@ -21,7 +21,7 @@
     <!-- ----------------------------------HEADER----------------------------------- -->
     <header>
         <div class="header_logo">
-            <a href="#">
+            <a href="./HomePage.html">
                 <img src="./image/Header/Logo.png" alt="Logo_System">
             </a>
         </div>
@@ -200,7 +200,7 @@
                             <label for="myCheckbox">Ghế ngồi</label>
                         </div>
                     </div>
-
+                    
             </div>
         </div>
         <div class="type_coach">
@@ -300,13 +300,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="infor_coach_trip ">
-                        <div class="content_coach_trip">
-                            <button class="tablinks" onclick="onpen(event, 'image')" id="image" href="">Hình ảnh</button>
-                            <button class="tablinks" onclick="onpen(event, 'utilities')" id="utilities" href="">Tiện ích</button>
-                            <button class="tablinks" onclick="onpen(event, 'point')" id="point" href="">Điểm đón/trả</button>
-                            <button class="tablinks" onclick="onpen(event, 'policy')" id="policy" href="">Chính sách</button>
-                            <button class="tablinks" onclick="onpen(event, 'evaluate')" id="evaluate" href="">Đánh giá</button>
+                    <div class="infor_coach_trip " id="tripInfor">
+                        <div class="content_coach_trip ">
+                            <button class="tablinks"  id="image" >Hình ảnh</button>
+                            <button class="tablinks"  id="utilities" >Tiện ích</button>
+                            <button class="tablinks" id="point" >Điểm đón/trả</button>
+                            <button class="tablinks"  id="policy" >Chính sách</button>
+                            <button class="tablinks" id="evaluate" >Đánh giá</button>
                         </div>
                         <div class="content" id="imageContent" style="display: block;">
                             <div class="image_title">
@@ -333,6 +333,7 @@
                             </div>
                         </div>
                         <div class="content" id="utilitiesContent">
+                            
                             <div class="utilities_title">
                                 <div style="width: 70%; display: flex; justify-content: center; margin-top: -40px;">
                                     <div class="element_utilities">
@@ -353,10 +354,236 @@
                                     </div>
                                     <div class="element_utilities">
                                         <img src="./image/Content/ListCoach/pillow.png" alt="dieuhoa">
-                                        <p>Chăn gối</p>
+                                        <p>Chăn gối</p> 
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="content" id="poinContent">
+                            <div class="form_point">
+                                <div class="point_pickup form_point_trip">
+                                    <div class="title_point"> 
+                                        <div class="in_form">
+                                            <h1>Điểm đón</h1>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>06h30</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Bến xe trung tâm thành phố Đà Nẵng</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>07h30</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Cổng trường Đại học Bách Khoa Đà Nẵng</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>08h00</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Cây xăng khu công nghiệp Hoà Khánh</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>08h30</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Đèo Hải Vân</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="point_pay form_point_trip">
+                                    <div class="title_point"> 
+                                        <div class="in_form">
+                                            <h1>Điểm trả</h1>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>13h30</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Thành cổ Quảng Trị</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>14h00</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Cầu Càng</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>15h00</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Đồi cát Lệ Thuỷ</span>
+                                                </div>
+                                            </div>
+                                            <div class="detail_point">
+                                                <div class="detail_point_check">
+                                                    <span>16h30</span>
+                                                    <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #848181;" ></div>
+                                                </div>
+                                                <div class="detail_point_place">
+                                                    <span>Thị Xã Ba Đồn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" id="policyContent">
+                            cak2
+                        </div>
+                        <div class="content" id="evaluateContent">
+                            cak3
+                        </div>
+                    </div>
+                    <div class="booking_tickets" id="bookingForm">
+                        <div class="choose_booking">
+                            <div class="title_booking">
+                                <div class="conner_stt" id="position_like" onclick="highlight(this)">
+                                    <div class="form_stt">1</div>
+                                    <p>Chỗ mong muốn</p>
+                                </div>
+                                <div style="width: 70px; height: 1px; background-color: #848181;"></div>
+                                <div class="conner_stt" id="position_on_off" onclick="highlight(this)">
+                                    <div class="form_stt">2</div>
+                                    <p>Điểm đón trả</p>
+                                </div>
+                                <div style="width: 70px; height: 1px; background-color: #848181;"></div>
+    
+                                <div class="conner_stt" id="get_infor" onclick="highlight(this)">
+                                    <div class="form_stt" >3</div>
+                                    <p>Nhập thông tin</p>
+                                </div>
+                            </div>
+                            <div style="height: 1px; width: 90%; box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25); background-color: #E3E3E3; margin-bottom: 30px;"></div>
+                        </div>
+                        <div class="booking_form" id="form_positionlike" style="display: block;">
+                            <div class="form_infor_booking" >
+                                <div class="content_booking">
+                                    <div class="title_chair">
+                                        <p>Chú thích</p>
+                                        <div class="chair_content">
+                                            <div class="image_chair">
+                                                <img src="./image/Content/ListCoach/chair_on.png" alt="">
+                                            </div>
+                                            <div class="infor_chair">
+                                                <span>Ghế trống</span>
+                                                <span>480.000đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="chair_content">
+                                            <div class="image_chair">
+                                                <img src="./image/Content/ListCoach/chair_off.png" alt="">
+                                            </div>
+                                            <div class="infor_chair">
+                                                <span>Ghế đã chọn</span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="chair_content">
+                                            <div class="image_chair">
+                                                <img src="./image/Content/ListCoach/chair_get.png" alt="">
+                                            </div>
+                                            <div class="infor_chair">
+                                                <span>Ghế đang chọn</span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position_chair">
+                                        <div class="bed_under">
+                                            <p>Tầng dưới</p>
+                                            <div class="position_under">
+                                                <div class="infor_position">
+                                                    <img style="width: 40px; height: 40px; margin:15px 70px 15px 0px;" src="./image/Content/ListCoach/Diver_vl.png" alt="">
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_get.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_get.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="bed_under">
+                                            <p>Tầng trên</p>
+                                            <div class="position_under">
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_get.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_on.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_off.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_on.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_on.png" alt="">    
+                                                </div>
+                                                <div class="infor_position">
+                                                    <img src="./image/Content/ListCoach/chair_on.png" alt="">
+                                                    <img src="./image/Content/ListCoach/chair_on.png" alt="">    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line_money">
+                                </div>
+                                <div class="money_booking">
+                                    <div class="space_white_money"></div>   
+                                    <div class="count_money">
+                                        <div class="display_money">
+                                            <p>Tổng tiền : </p>
+                                            <span>250.000.đ</span>
+                                        </div>
+                                        <div class="verify_money">
+                                            Tiếp tục
+                                        </div>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking_form" id="form_position_onoff">
+                            cak1
+                        </div>
+                        <div class="booking_form" id="form_get_infor">
+                            cak2
                         </div>
                     </div>
                 </div>
@@ -404,22 +631,22 @@
                         <div class="end_partner_element">
                             <div class="container_price">
                                 <h1>Giá vé : <span>800.000đ</span></h1>
-                                <p id="showHideDetails" >Thông tin chi tiết <i class="ti-angle-down"></i></p>
+                                <p id="showHideDetails1" >Thông tin chi tiết <i class="ti-angle-down"></i></p>
                             </div>
                             <div class="button_buy">
                                 Đặt vé
                             </div>
                         </div>
                     </div>
-                    <div class="infor_coach_trip">
+                    <div class="infor_coach_trip" id="tripInfor">
                         <div class="content_coach_trip">
-                            <button class="tablinks" onclick="onpen(event, 'image')" id="image" href="">Hình ảnh</button>
-                            <button class="tablinks" onclick="onpen(event, 'utilities')" id="utilities" href="">Tiện ích</button>
-                            <button class="tablinks" onclick="onpen(event, 'point')" id="point" href="">Điểm đón/trả</button>
-                            <button class="tablinks" onclick="onpen(event, 'policy')" id="policy" href="">Chính sách</button>
-                            <button class="tablinks" onclick="onpen(event, 'evaluate')" id="evaluate" href="">Đánh giá</button>
+                            <button class="tablinks"  id="image1" >Hình ảnh</button>
+                            <button class="tablinks"  id="utilities1" >Tiện ích</button>
+                            <button class="tablinks" id="point1" >Điểm đón/trả</button>
+                            <button class="tablinks"  id="policy1" >Chính sách</button>
+                            <button class="tablinks" id="evaluate1" >Đánh giá</button>
                         </div>
-                        <div class="content" id="imageContent" style="display: block;">
+                        <div class="content" id="imageContent1" style="display: block;">
                             <div class="image_title">
                                 <div class="left_div image_angle">
                                     <div class="angle_form"><i class="ti-angle-left"></i></div>
@@ -443,7 +670,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content" id="utilitiesContent">
+                        <div class="content" id="utilitiesContent1">
+                            
                             <div class="utilities_title">
                                 <div style="width: 70%; display: flex; justify-content: center; margin-top: -40px;">
                                     <div class="element_utilities">
@@ -464,16 +692,98 @@
                                     </div>
                                     <div class="element_utilities">
                                         <img src="./image/Content/ListCoach/pillow.png" alt="dieuhoa">
-                                        <p>Chăn gối</p>
+                                        <p>Chăn gối</p> 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="content" id="poinContent1">
+                            
+                        </div>
+                        <div class="content" id="policyContent1">
+                            cak2
+                        </div>
+                        <div class="content" id="evaluateContent1">
+                            cak3
+                        </div>
                     </div>
                 </div>
-            </div>    
+            </div> 
         </div>
-    </div>
+        </div>
+        <div class="infor_trip_detail">
+            <div class="content_detail">
+                <p>Thông tin tuyến đường</p>
+            </div>
+            <div class="line_trip"></div>
+            <div class="trip">
+                <div class="on_off">
+                    <div class="position_on on_off_in">
+                        <img src="./image/Content/ListCoach/start (2).png" alt="">
+                        <span>Đà Nẵng</span>
+                    </div>
+                    <div class="image_coach on_off_in">
+                        <img src="./image/Content/ListCoach/bus (2).png" alt="">
+                    </div>
+                    <div class="position_off on_off_in" >
+                        <img src="./image/Content/ListCoach/end.png" alt="">
+                        <span>Hà Nội</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <span>778km</span>
+                </div>
+            </div>
+            <div class="line_trip"></div>
+            <div class="trip">
+                <div class="on_off">
+                    <div class="on_off_trip">
+                        <img src="./image/Content/ListCoach/clock.png" alt="">
+                        <span>Thời gian di chuyển</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <span>11h30p</span>
+                </div>
+            </div>
+            <div class="line_trip"></div>
+            <div class="trip">
+                <div class="on_off">
+                    <div class="on_off_trip">
+                        <img src="./image/Content/ListCoach/countdown.png" alt="">
+                        <span>Số lượng chuyến</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <span>12 chuyến</span>
+                </div>
+            </div>
+            <div class="line_trip"></div>
+            <div class="trip">
+                <div class="on_off">
+                    <div class="on_off_trip">
+                        <img src="./image/Content/ListCoach/office-building.png" alt="">
+                        <span>Số lượng nhà xe</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <span>5 nhà xe</span>
+                </div>
+            </div>
+            <div class="line_trip"></div>
+            <div class="trip">
+                <div class="on_off">
+                    <div class="on_off_trip">
+                        <img src="./image/Content/ListCoach/lottery.png" alt="">
+                        <span>Giá vé trung bình</span>
+                    </div>
+                </div>
+                <div class="infor">
+                    <span>850.000đ</span>
+                </div>
+            </div>
+        </div>   
+</div>
     <!-- ----------------------------------FOOTER----------------------------------- -->
     <div class="footer">
         <div class="footer_inwe">
