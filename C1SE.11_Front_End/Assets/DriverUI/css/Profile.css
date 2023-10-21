@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html 
+{
+    height: 100%;
+}
+/* ------------------------------------ HEADER ------------------------------------- */ -->
+header
+{
+    height: 100px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo
+{
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header a
+{
+    border-radius: 6px;
+    height: 104px;
+    width: 250px;
+}
+.header_logo a img
+{
+    width: 165px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.header_category
+{
+    display: flex;
+    height: 26.667px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header_category a 
+{
+    color: #000;
+    font-family: Sans Serif Collection;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 7.5px;
+}
+.Exit
+{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+}
+.Exit img
+{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+/* ------------------------------------ TOOLBAR ------------------------------------- */ -->
+.toolbar
+{
+    height: 65px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbar a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar img
+{
+    width: 55px;
+    height: 54.942px;
+    flex-shrink: 0; 
+    margin-right: 31px;
+}
+.toolbar .active
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41.5px;
+    width: 260px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 30px 0px 0px 30px;
+    background: #A8C0ED;
+}
+/* ------------------------------------ PROFILE ------------------------------------- */ -->
+.header
+{
+    height: 60px;
+    flex-shrink: 0;
+    margin-left: 163px;
+    margin-right: 163px;
+    border-radius: 30px;
+    border: 1px solid #A8C0ED;
+    background: #A8C0ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+.header div
+{
+    margin-left: 39px;
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+.User_Info
+{  
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: 12px;
+    margin-left: 163px;
+    margin-right: 163px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.User_Info .Under_Line
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    text-decoration-line: underline;
+    margin-left: 69px;
+    margin-bottom: 28px;
+}
+.User_Info .Info
+{
+    height: auto;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.User_Info .Info a
+{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: url(<path-to-image>), lightgray 50%;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 77px;
+}
+.User_Info .Info b
+{
+    margin-right: 193px;
+    margin-left: 96px;
+}
+.User_Info .Info .Line
+{
+    width: 1px;
+    height: 224.002px;
+    background: #000;
+    color: black;
+}
+.License
+{
+    height: fit-content;
+    margin-left: 233px;
+    margin-top: 34px;
+}
+.License .Under_Line
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration-line: underline;
+}
+.License .Info
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 48px;
+}
+.Picture
+{
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.Picture .Left
+{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Picture .Left .Left_Picture
+{
+    width: 450px;
+    height: 221px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.55;
+    background: #D9D9D9;
+}
+.Picture .Right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 257px;
+}
+.Picture .Right .Right_Picture
+{
+    width: 450px;
+    height: 221px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.55;
+    background: #D9D9D9;
+}

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html 
+{
+    height: 100%;
+}
+/* ------------------------------------ HEADER ------------------------------------- */ -->
+header
+{
+    height: 100px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo
+{
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header a
+{
+    border-radius: 6px;
+    height: 104px;
+    width: 250px;
+}
+.header_logo a img
+{
+    width: 165px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.header_category
+{
+    display: flex;
+    height: 26.667px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header_category a 
+{
+    color: #000;
+    font-family: Sans Serif Collection;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 7.5px;
+}
+.Exit
+{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+}
+.Exit img
+{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+/* ------------------------------------ TOOLBAR ------------------------------------- */ -->
+.toolbar
+{
+    height: 65px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbar a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar img
+{
+    width: 55px;
+    height: 54.942px;
+    flex-shrink: 0; 
+    margin-right: 31px;
+}
+.toolbar .active
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41.5px;
+    width: 260px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #A8C0ED;
+}
+/* ------------------------------------ CONTENT ------------------------------------- */ -->
+.Question
+{
+    width: 1230px;
+    height: auto;
+    flex-shrink: 0; 
+    fill: #FFF;
+    padding-left: 20%;
+    padding-top: 75px;
+}
+.Question .Regular_Question
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+    border-left: 10px solid #A8C0ED;
+    background: #FFF;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 25px; 
+}
+.Question a
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    display: flex;
+    padding-left: 37px;
+    padding-top: 24px;
+}
+.Technical_Assistance
+{
+    width: 1230px;
+    height: auto;
+    flex-shrink: 0; 
+    fill: #FFF;
+    padding-left: 20%;
+    padding-top: 24px;
+}
+.Technical_Assistance .Bar
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+    border-left: 10px solid #A8C0ED;
+    background: #FFF;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 25px;
+}
+.Technical_Assistance .Video
+{
+    width: 925px;
+    height: 430px;
+    flex-shrink: 0; 
+    background-color:#D9D9D9;
+    color: #D9D9D9;
+    margin-top: 29px;
+}
+.Technical_Assistance .Title
+{
+    display: flex;
+    justify-content: center;
+}
+.Contact_Information
+{
+    width: 1230px;
+    height: auto;
+    flex-shrink: 0; 
+    fill: #FFF;
+    padding-left: 20%;
+    padding-top: 29px;
+}
+.Contact_Information .title
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+    border-left: 10px solid #A8C0ED;
+    background: #FFF;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 25px;
+    margin-bottom: 29px;
+}
+.Contact_Information a
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    display: flex;
+    padding-left: 95px;
+}

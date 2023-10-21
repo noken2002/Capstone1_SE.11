@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html 
+{
+    height: 100%;
+}
+/* ------------------------------------ HEADER ------------------------------------- */ -->
+header
+{
+    height: 100px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo
+{
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header a
+{
+    border-radius: 6px;
+    height: 104px;
+    width: 250px;
+}
+.header_logo a img
+{
+    width: 165px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.header_category
+{
+    display: flex;
+    height: 26.667px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header_category a 
+{
+    color: #000;
+    font-family: Sans Serif Collection;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 7.5px;
+}
+.Exit
+{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+}
+.Exit img
+{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+/* ------------------------------------ TOOLBAR ------------------------------------- */ -->
+.toolbar
+{
+    height: 65px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbar a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar img
+{
+    width: 55px;
+    height: 54.942px;
+    flex-shrink: 0; 
+    margin-right: 31px;
+}
+.toolbar .active
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41.5px;
+    width: 260px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #A8C0ED;
+}
+/* ------------------------------------ CONTENT ------------------------------------- */ -->
+.back
+{
+
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 163px;
+    margin-right: 163px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #A8C0ED;
+    display: flex;
+    align-items: center;
+}
+.back div
+{
+    padding-left: 70px;
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;  
+}
+content
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 164px;
+    padding-right: 162px;
+}
+content .border
+{
+    width: 925px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 93px;
+    border-left: 5px solid #A8C0ED;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+content div
+{
+    margin-left: 118px;
+    margin-right: 119px;
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+content .number
+{
+    margin-left: 145px;
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+content .disc
+{
+    list-style-type: disc;
+    margin-left: 145px;
+}

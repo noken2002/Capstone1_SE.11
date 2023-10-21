@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriverUI</title>
+    <link rel="stylesheet" href="./css/DriverUI.css">
+    <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#">
+    
+</head>
+<body>
+    <!-- ----------------------------------HEADER--------------------------------------->
+    <header>
+        <div class="header_logo">
+            <a href="#">
+                <img src="./image/DriverUI/Logo.png" alt="Logo_System">
+            </a>
+        </div>
+        <div class="header_category">
+            <a>ExpressTickets</a>
+            <a>Nhanh chóng - Tiện lợi - Dễ dàng</a>
+        </div>
+        <div class="Exit"><img src="./image/DriverUI/Sign_in_squre.png">Đăng xuất</div>
+    </header>
+    <!-- ----------------------------------TOOLBAR------------------------------------->
+    <div class="toolbar">
+        <a class="active" href="DriverUI.html">Công việc</a>
+        <a href="History.html">Lịch sử</a>
+        <a href="#">Hỗ trợ</a>
+        <a href="#"><img src="./image/DriverUI/Ellipse 2.png">     Hồ sơ</a>
+    </div>
+    <!-- ----------------------------------MANAGE------------------------------------->
+    <div class="manage">
+        <a class="active" href="DriverUI.html">Quản lý chỗ xe</a>
+        <a href="#">Quản lý khách hàng</a>
+    </div>
+    <!-- ----------------------------------Notification------------------------------>
+    <div class="notification">
+        <div id="hideShow" class="row">
+            <a>Thông tin chuyến đi<img src="./image/DriverUI/down.png" alt=""></a>
+        </div>
+        <div class="Bell">
+            <b><img src="./image/DriverUI/Bell.png" alt="" style="font-size: large;"></b>
+        </div>
+    </div>
+    <div id="notice" class="Notice">
+        <img src="./image/DriverUI/Free image icon png vector - Pixsector_ Free vector images, mockups, PSDs and photos 1.png">
+        <div class="content-left">
+            <a>Tên nhà xe:</a>
+            <a>Loại xe:</a>
+            <a>Biển số:</a>
+        </div>
+        <div class="content-right">
+            <b>Ngày/tháng/năm</b>
+            <b>Thời gian-Điểm bắt đầu</b>
+            <b>Thời gian-Điểm kết thúc</b>
+        </div>
+    </div>
+    <!-- ----------------------------------Content------------------------------>
+    <div class="content">
+        <div class="Right">
+            <div class="Check">
+                <a id="startCamera"><img src="./image/DriverUI/Qr Code.png">Kiểm tra vé bằng QR</a>
+                <a id="startCamera"><img src="./image/DriverUI/Face ID.png">Kiểm tra vé bằng mặt</a>
+                <div id="centeredDiv" >
+                    <div id="cameraContainer" class="Camera">
+                        <div class="Header">QUÉT MÃ QR</div>
+                        <video id="cameraView" autoplay playsinline class="CameraView"></video>
+                        <div class="Back">< Quay lại</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Note">
+                <a class="note">Chú thích:</a>
+                <a><color class="Color1">...</color> Ghế có người đặt</a>
+                <a><color class="Color2">...</color> Ghế đã có người đặt</a>
+                <a><color class="Color3">...</color> Ghế chưa ai đặt</a>
+                <a><color class="Color4">...</color> Hàng khách chuẩn bị xuống xe</a>
+            </div>
+        </div>
+        <div class="Left">
+            <div class="Floor">
+                <b class="active">Tầng 1</b>
+                <b>Tầng 2</b>
+            </div>
+            <div class="Bus">
+    
+            </div>
+        </div>
+    </div>
+</body>
+<script rel="Script" src="./Script/DriverUI.js"> </script>
+</html>

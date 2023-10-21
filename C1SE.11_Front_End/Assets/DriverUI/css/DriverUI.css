@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html 
+{
+    height: 100%;
+}
+/* ------------------------------------ HEADER ------------------------------------- */ -->
+header
+{
+    height: 100px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo
+{
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header a
+{
+    border-radius: 6px;
+    height: 104px;
+    width: 250px;
+}
+.header_logo a img
+{
+    width: 165px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.header_category
+{
+    display: flex;
+    height: 26.667px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.header_category a 
+{
+    color: #000;
+    font-family: Sans Serif Collection;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 7.5px;
+}
+.Exit
+{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+}
+.Exit img
+{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+/* ------------------------------------ TOOLBAR ------------------------------------- */ -->
+.toolbar
+{
+    height: 65px;
+    flex-shrink: 0;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+.toolbar a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar img
+{
+    width: 55px;
+    height: 54.942px;
+    flex-shrink: 0; 
+    margin-right: 31px;
+}
+.toolbar .active
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41.5px;
+    width: 260px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #A8C0ED;
+}
+/* ------------------------------------ MANAGE ------------------------------------- */ -->
+.manage
+{
+    height: auto;
+    margin-left: 163px;
+    margin-right: 163px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 5px;
+}
+.manage a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.manage .active
+{
+    background-color: #A8C0ED;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+}
+/* ------------------------------------ NOTIFICATION ------------------------------------- */ -->
+.notification
+{
+    height: 60px;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A8C0ED;
+    background-clip: content-box;
+}
+.notification a 
+{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Sen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-left: 63px;
+}
+.notification img
+{
+    width: 24.248px;
+    height: 23px;
+    flex-shrink: 0;
+}
+.notification .Bell img
+{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+.Notice
+{
+    height: auto;
+    padding-left: 162px;
+    padding-right: 163px;
+    display: none;
+    grid-template-columns: 20% 40% 40%;
+}
+.Notice .content-left
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Notice .content-left a
+{
+    padding: 20px;
+}
+.Notice .content-right
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Notice .content-right b
+{
+    padding: 20px;
+}
+/* ------------------------------------ CONTENT ------------------------------------- */ -->
+.content
+{
+    height: auto;
+    padding-left: 163px;
+    padding-right: 163px;
+    display: flex;
+    background-clip: content-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.content .Right .Check
+{
+    display: grid;   
+    font-size: 24px;
+    grid-template-rows: 80px 110px;
+    align-items: end;
+}
+.content .Right .Check a
+{
+    display: flex;
+    align-items: center; 
+    padding-left: 45px;
+}
+.content .Note 
+{ 
+    padding-top: 15px;
+    padding-left: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.content .Note .note
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px;
+}
+.content .Note a
+{
+    color: #000;
+    font-family: Sen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.content .Note color
+{
+    width: 50px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.content .Note .Color1
+{
+    color:#FBFD83;
+    background-color: #FBFD83;
+}
+.content .Note .Color2
+{
+    color:#FF7676;
+    background-color: #FF7676;
+}
+.content .Note .Color3
+{
+    color:#7DFF99;
+    background-color: #7DFF99;
+}
+.content .Note .Color4
+{
+    color: #877DFF;
+    background-color: #877DFF;
+}
+.content .Left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .Left .Floor
+{
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    display: grid;  
+    grid-template-columns: 100px 100px;
+    padding-top: 20px;
+    margin-right: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .Left .Floor .active
+{
+    background-color: #A8C0ED;
+    border-radius: 10px;
+}
+.content  .Bus
+{
+    width: 220px;
+    height: 420px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    margin-right: 36px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#centeredDiv 
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+#centeredDiv .Camera
+{
+    width: 1112px;
+    height: 723px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+}
+#centeredDiv .Header
+{
+    height: 60px;
+    border-radius: 30px;
+    background: #A8C0ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#centeredDiv video
+{
+    width: 1011px;
+    height: 574px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: #1E1E1E;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#centeredDiv .Back
+{
+    margin-top: 15px;
+    margin-left: 936px;
+}
+#cameraContainer 
+{
+    background-color: #fff; /* Màu nền của phần camera */
+    padding: 20px; /* Khoảng cách nội dung với lề */
+}
