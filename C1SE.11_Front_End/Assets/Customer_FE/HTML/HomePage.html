@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.min.css">
-    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./css/HomePage.css">
-    <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="shortcut icon" href="../Assets/image/logoWeb.jpg" type="#">
     
 </head>
 <body>
@@ -15,7 +15,7 @@
     <header>
         <div class="header_logo">
             <a href="#">
-                <img src="./image/Header/Logo.png" alt="Logo_System">
+                <img src="../image/Header/Logo.png" alt="Logo_System">
             </a>
         </div>
         <div class="header_category">
@@ -30,24 +30,33 @@
             </div>
             <div class="header_icons_ct">
                 <a href="#">
-                    <img src="./image/Header/world.png" alt="user_icons">
+                    <img src="../image/Header/world.png" alt="user_icons">
                 </a>
-                <a href="#">
-                    <img src="./image/Header/profile.png" alt="user_icons">
+                <a id="showLogin" href="#">
+                    <img src="../image/Header/profile.png" alt="user_icons">
                     <p>USER</p>
                 </a>
                 
+            </div>
+            <div class="form_in_out" id="form_loginout">
+                <div onclick="document.getElementById('id01').style.display='block'" id="log_in" class="form_in log">
+                    <p>Đăng nhập</p>
+                </div>
+                <div class="line_content" style="background-color: #848484;"></div>
+                <div class="form_out log" id="log_out">
+                    <p>Đăng ký</p>
+                </div>
             </div>
         </div>
     </header>
     <!-- ----------------------------------BANNER----------------------------------- -->
     <div class="banner">
         <div class="banner_img">
-            <img src="./image/Banner/ImageBanner.jpg" alt="">
+            <img src="../image/Banner/ImageBanner.jpg" alt="">
             <div class="banner_content">
                 <div class="banner_content_setup">
                     <div class="search_tickets">
-                        <img class="exchange" src="./image/Header/exchange.png" alt="">
+                        <img class="exchange" src="../image/Header/exchange.png" alt="">
                         <div id="start" class="search_location">
                             <div id="div_start" class="list_start hidden">
                                 <p>Tỉnh, Thành phố</p>
@@ -59,7 +68,7 @@
                                     <li>Khánh Hoà</li>
                                 </ul>
                             </div>
-                            <img src="./image/Header/placeholder.png" alt="start">
+                            <img src="../image/Header/placeholder.png" alt="start">
                             <p>Điểm xuất phát</p>
                         </div>
                         <div class="line_column">
@@ -74,16 +83,21 @@
                                     <li>Sài Gòn</li>
                                     <li>Nha Trang</li>
                                     <li>Khánh Hoà</li>
+                                    <li>Đà Nẵng</li>
+                                    <li>Hà Nội</li>
+                                    <li>Sài Gòn</li>
+                                    <li>Nha Trang</li>
+                                    <li>Khánh Hoà</li>
                                 </ul>
                             </div>
-                            <img src="./image/Header/placeholder.png" alt="start">
+                            <img src="../image/Header/placeholder.png" alt="start">
                             <p>Điểm đến</p>
                         </div>
                         <div class="line_column">
                         </div>
                         <div class="search_schedule">
                             <div class="image_schedule">
-                                <img src="./image/Header/calendar.png" alt="schedule">
+                                <img src="../image/Header/calendar.png" alt="schedule">
                             </div>
                             <div class="content_schedule">
                                 <p>Ngày đi</p>
@@ -115,7 +129,7 @@
                 <div class="content_coach_box">
                     <div class="card_coach">
                         <div class="first-content">
-                            <img src="./image/Content/Nhaxe/HieuHoa.jpg" alt="HieuHoa">
+                            <img src="../image/Content/Nhaxe/HieuHoa.jpg" alt="HieuHoa">
                             <a href="#">Nhà xe Hiếu Hoa</a>
                             <div class="start_items">
                                 <i class="ti-star"></i>
@@ -131,12 +145,12 @@
                             <div class="information_coach">
                                 <div class="Distance_coach">
                                     <div class="Distance_coach_start">
-                                        <img src="./image/Content/Nhaxe/start.png" alt="Start">
+                                        <img src="../image/Content/Nhaxe/start.png" alt="Start">
                                         <p style="margin-left: 4px;">Vinh</p>
                                     </div>
-                                    <img style="width: 20px;" src="./image/Content/Nhaxe/exchange.png" alt="">
+                                    <img style="width: 20px;" src="../image/Content/Nhaxe/exchange.png" alt="">
                                     <div class="Distance_coach_end">
-                                        <img src="./image/Content/Nhaxe/end.png" alt="end">
+                                        <img src="../image/Content/Nhaxe/end.png" alt="end">
                                         <p style="margin-left: 4px;">Đà Nẵng</p>
                                     </div>
                                     <p>------</p>
@@ -144,28 +158,28 @@
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/bus.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/bus.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng xe</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">8 xe</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/countdown.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/countdown.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng chuyến</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">16 chuyến/ngày</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/clock.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/clock.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Thời gian di chuyển</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">6h30p</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/lottery.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/lottery.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Giá vé trung bình</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">300.000đ</p>
@@ -177,23 +191,23 @@
                                 </div>
                                 <div class="content_utilities">
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
                                         <p>Điều hoà</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/pillow.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/pillow.png" alt="Điều hoà">
                                         <p>Chăn gối</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/television.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/television.png" alt="Điều hoà">
                                         <p>TV</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/towel.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/towel.png" alt="Điều hoà">
                                         <p>Khăn lạnh</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/water.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/water.png" alt="Điều hoà">
                                         <p>Nước lọc</p>
                                     </div>
                                 </div>
@@ -202,7 +216,7 @@
                     </div>
                     <div class="card_coach">
                         <div class="first-content">
-                            <img src="./image/Content/Nhaxe/hoanglong.jpg" alt="HieuHoa">
+                            <img src="../image/Content/Nhaxe/hoanglong.jpg" alt="HieuHoa">
                             <a href="#">Nhà xe Hoàng Long</a>
                             <div class="start_items">
                                 <i class="ti-star"></i>
@@ -217,12 +231,12 @@
                             <div class="information_coach">
                                 <div class="Distance_coach">
                                     <div class="Distance_coach_start">
-                                        <img src="./image/Content/Nhaxe/start.png" alt="Start">
+                                        <img src="../image/Content/Nhaxe/start.png" alt="Start">
                                         <p style="margin-left: 4px;">Vinh</p>
                                     </div>
-                                    <img style="width: 20px;" src="./image/Content/Nhaxe/exchange.png" alt="">
+                                    <img style="width: 20px;" src="../image/Content/Nhaxe/exchange.png" alt="">
                                     <div class="Distance_coach_end">
-                                        <img src="./image/Content/Nhaxe/end.png" alt="end">
+                                        <img src="../image/Content/Nhaxe/end.png" alt="end">
                                         <p style="margin-left: 4px;">Đà Nẵng</p>
                                     </div>
                                     <p>------</p>
@@ -230,28 +244,28 @@
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/bus.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/bus.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng xe</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">8 xe</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/countdown.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/countdown.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng chuyến</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">16 chuyến/ngày</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/clock.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/clock.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Thời gian di chuyển</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">6h30p</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/lottery.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/lottery.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Giá vé trung bình</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">300.000đ</p>
@@ -263,23 +277,23 @@
                                 </div>
                                 <div class="content_utilities">
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
                                         <p>Điều hoà</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/pillow.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/pillow.png" alt="Điều hoà">
                                         <p>Chăn gối</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/television.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/television.png" alt="Điều hoà">
                                         <p>TV</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/towel.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/towel.png" alt="Điều hoà">
                                         <p>Khăn lạnh</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/water.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/water.png" alt="Điều hoà">
                                         <p>Nước lọc</p>
                                     </div>
                                 </div>
@@ -288,7 +302,7 @@
                     </div>
                     <div class="card_coach">
                         <div class="first-content">
-                            <img src="./image/Content/Nhaxe/DucPhat.jpg" alt="HieuHoa">
+                            <img src="../image/Content/Nhaxe/DucPhat.jpg" alt="HieuHoa">
                             <a href="#">Nhà xe Đức Phát</a>
                             <div class="start_items">
                                 <i class="ti-star"></i>
@@ -302,12 +316,12 @@
                             <div class="information_coach">
                                 <div class="Distance_coach">
                                     <div class="Distance_coach_start">
-                                        <img src="./image/Content/Nhaxe/start.png" alt="Start">
+                                        <img src="../image/Content/Nhaxe/start.png" alt="Start">
                                         <p style="margin-left: 4px;">Vinh</p>
                                     </div>
-                                    <img style="width: 20px;" src="./image/Content/Nhaxe/exchange.png" alt="">
+                                    <img style="width: 20px;" src="../image/Content/Nhaxe/exchange.png" alt="">
                                     <div class="Distance_coach_end">
-                                        <img src="./image/Content/Nhaxe/end.png" alt="end">
+                                        <img src="../image/Content/Nhaxe/end.png" alt="end">
                                         <p style="margin-left: 4px;">Đà Nẵng</p>
                                     </div>
                                     <p>------</p>
@@ -315,28 +329,28 @@
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/bus.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/bus.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng xe</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">8 xe</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/countdown.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/countdown.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Số lượng chuyến</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">16 chuyến/ngày</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/clock.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/clock.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Thời gian di chuyển</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">6h30p</p>
                                 </div>
                                 <div class="quantity_coach">
                                     <div class="items_infor">
-                                        <img src="./image/Content/Nhaxe/lottery.png" alt="quantityCoach">
+                                        <img src="../image/Content/Nhaxe/lottery.png" alt="quantityCoach">
                                         <p style="font-size: 10px; margin-left: 6px;">Giá vé trung bình</p>
                                     </div>
                                     <p style="font-size: 10px; margin-right: 12px;">300.000đ</p>
@@ -348,23 +362,23 @@
                                 </div>
                                 <div class="content_utilities">
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/air-conditioner.png" alt="Điều hoà">
                                         <p>Điều hoà</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/pillow.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/pillow.png" alt="Điều hoà">
                                         <p>Chăn gối</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/television.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/television.png" alt="Điều hoà">
                                         <p>TV</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/towel.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/towel.png" alt="Điều hoà">
                                         <p>Khăn lạnh</p>
                                     </div>
                                     <div class="infor_Utilities">
-                                        <img src="./image/Content/Nhaxe/water.png" alt="Điều hoà">
+                                        <img src="../image/Content/Nhaxe/water.png" alt="Điều hoà">
                                         <p>Nước lọc</p>
                                     </div>
                                 </div>
@@ -390,7 +404,7 @@
                 <div class="content_coach_box">
                     <div id="trip_one" class="trip_coach">
                         <div class="image_trip">
-                            <img src="./image/Content/Trip/Trips/img_hero.png" alt="SG-DL">
+                            <img src="../image/Content/Trip/Trips/img_hero.png" alt="SG-DL">
                         </div>
                         <div class="content_trip">
                             <h1>Sài Gòn - Đà Lạt</h1>
@@ -408,7 +422,7 @@
                     </div>  
                     <div id="trip_two" class="trip_coach">
                         <div class="image_trip">
-                            <img src="./image/Content/Trip/Trips/img_hero (1).png" alt="SG-DL">
+                            <img src="../image/Content/Trip/Trips/img_hero (1).png" alt="SG-DL">
                         </div>
                         <div class="content_trip">
                             <h1>Hà Nội - Hải Phòng</h1>
@@ -426,7 +440,7 @@
                     </div>
                     <div id="trip_three" class="trip_coach">
                         <div class="image_trip">
-                            <img src="./image/Content/Trip/Trips/img_hero (2).png" alt="HN-HP">
+                            <img src="../image/Content/Trip/Trips/img_hero (2).png" alt="HN-HP">
                         </div>
                         <div class="content_trip">
                             <h1>Nghệ An - Đà Nẵng</h1>
@@ -444,7 +458,7 @@
                     </div>
                     <div id="trip_four" class="trip_coach">
                         <div class="image_trip">
-                            <img src="./image/Content/Trip/Trips/img_hero (3).png" alt="SG-DL">
+                            <img src="../image/Content/Trip/Trips/img_hero (3).png" alt="SG-DL">
                         </div>
                         <div class="content_trip">
                             <h1>Sài Gòn - Nha Trang</h1>
@@ -478,7 +492,7 @@
                 <div class="content_coach_box">
                     <div class="voucher_coach">
                         <div class="image_voucher">
-                            <img src="./image/Content/Trip/Voucher/voucher1.jpg" alt="SG-DL">
+                            <img src="../image/Content/Trip/Voucher/voucher1.jpg" alt="SG-DL">
                         </div>
                         <div class="content_voucher">
                             <p>Nhận ưu đãi đến 50% các tuyến đường hot</p>
@@ -486,7 +500,7 @@
                     </div>  
                     <div class="voucher_coach">
                         <div class="image_voucher">
-                            <img src="./image/Content/Trip/Voucher/voucher2.jpg" alt="SG-DL">
+                            <img src="../image/Content/Trip/Voucher/voucher2.jpg" alt="SG-DL">
                         </div>
                         <div class="content_voucher">
                             <p>Nhận ưu đãi x2 khi đặt vé xe khách khứ hồi</p>
@@ -494,7 +508,7 @@
                     </div>
                     <div class="voucher_coach">
                         <div class="image_voucher">
-                            <img src="./image/Content/Trip/Voucher/voucher3.jpg" alt="HN-HP">
+                            <img src="../image/Content/Trip/Voucher/voucher3.jpg" alt="HN-HP">
                         </div>
                         <div class="content_voucher">
                             <p>Dành cho KH mới - giảm đến 25% khi đặt vé</p>
@@ -502,7 +516,7 @@
                     </div>
                     <div class="voucher_coach">
                         <div class="image_voucher">
-                            <img src="./image/Content/Trip/Voucher/voucher4.jpg" alt="SG-DL">
+                            <img src="../image/Content/Trip/Voucher/voucher4.jpg" alt="SG-DL">
                         </div>
                         <div class="content_voucher">
                             <p>Giới thiệu bạn bè nhận ngay ưu đãi khủng</p>
@@ -522,15 +536,15 @@
                 </div>
                 <div class="content_partner_box">
                     <div class="row_partner">
-                        <img src="./image/Content/Partner/DucLoc.png" alt="DucLoc">
-                        <img src="./image/Content/Partner/HoangGia.png" alt="HoangGia">
-                        <img src="./image/Content/Partner/PhuLong.png" alt="PhuLong">
-                        <img src="./image/Content/Partner/TrungTin.png" alt="TrungTin">
+                        <img src="../image/Content/Partner/DucLoc.png" alt="DucLoc">
+                        <img src="../image/Content/Partner/HoangGia.png" alt="HoangGia">
+                        <img src="../image/Content/Partner/PhuLong.png" alt="PhuLong">
+                        <img src="../image/Content/Partner/TrungTin.png" alt="TrungTin">
                     </div>                  
                     <div class="row_partner">
-                        <img src="./image/Content/Partner/HOangLong.png" alt="hoanglong">
-                        <img style="width: 340px;" src="./image/Content/Partner/HieuHoa.png" alt="HieuHoa">
-                        <img src="./image/Content/Partner/TuTac.png" alt="TuTac">
+                        <img src="../image/Content/Partner/HOangLong.png" alt="hoanglong">
+                        <img style="width: 340px;" src="../image/Content/Partner/HieuHoa.png" alt="HieuHoa">
+                        <img src="../image/Content/Partner/TuTac.png" alt="TuTac">
 
                     </div>
                 </div>
@@ -547,7 +561,7 @@
                             <div class="row_basis">
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/bus.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/bus.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>500+ Nhà xe chất lượng cao</h1>
@@ -556,7 +570,7 @@
                                 </div>
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/bus-ticket.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/bus-ticket.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Đặt vé dễ dàng</h1>
@@ -565,7 +579,7 @@
                                 </div>
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/success.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/success.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Đảm bảo có vé</h1>
@@ -574,7 +588,7 @@
                                 </div>
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/coupon.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/coupon.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Nhiều ưu đãi lớn</h1>
@@ -585,7 +599,7 @@
                             <div class="row_basis">
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/money-transfer.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/money-transfer.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Thanh toán đơn giản, đa dạng</h1>
@@ -594,7 +608,7 @@
                                 </div>
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/qr-code.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/qr-code.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Vé xe QR code</h1>
@@ -603,7 +617,7 @@
                                 </div>
                                 <div class="items_basis">
                                     <div class="image_basis">
-                                        <img src="./image/Content/NenTang/authentication.png" alt="Nhaxe">
+                                        <img src="../image/Content/NenTang/authentication.png" alt="Nhaxe">
                                     </div>
                                     <div class="content_image_basis">
                                         <h1>Nhận diện khuôn mặt</h1>
@@ -624,7 +638,7 @@
             <p>Tại sao nên mua vé tại Express Tickets</p>
             <div class="content_reason">
                 <div class="content_reason_image">
-                    <img src="./image/Content/LuaChon/thumb-ups.png" alt="">
+                    <img src="../image/Content/LuaChon/thumb-ups.png" alt="">
                 </div>
                 <div class="content_reason_infor">
                     <h1>Tiện lợi và nhanh chóng</h1>
@@ -642,12 +656,12 @@
                     </p>
                 </div>
                 <div class="content_reason_image">
-                    <img src="./image/Content/LuaChon/qr-code (1).png" alt="">
+                    <img src="../image/Content/LuaChon/qr-code (1).png" alt="">
                 </div>
             </div>
             <div class="content_reason">
                 <div class="content_reason_image">
-                    <img src="./image/Content/LuaChon/facial-recognition.png" alt="">
+                    <img src="../image/Content/LuaChon/facial-recognition.png" alt="">
                 </div>
                 <div class="content_reason_infor">
                     <h1>An toàn và tiện ích</h1>
@@ -666,16 +680,39 @@
                     </p>
                 </div>
                 <div class="content_reason_image">
-                    <img src="./image/Content/LuaChon/customer-service.png" alt="">
+                    <img src="../image/Content/LuaChon/customer-service.png" alt="">
                 </div>
             </div>
         </div>
+    </div>
+    <!-- ----------------------------------LOGIN----------------------------------- -->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="../image/Header/profile.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
     </div>
     <!-- ----------------------------------FOOTER----------------------------------- -->
     <div class="footer">
         <div class="footer_inwe">
             <div class="footer_inwe_image">
-                <img src="./image/Header/Logo.png" alt="">
+                <img src="../image/Header/Logo.png" alt="">
             </div>
             <div class="footer_inwe_content">
                 <p>Về chúng tôi</p>
@@ -684,7 +721,7 @@
                 <div class="footer_inwe_infor">
                     <div class="row_infor_inwe">
                         <div class="infor_image_footer">
-                            <img src="./image/Footer/VeChungToi/bulb.png" alt="">
+                            <img src="../image/Footer/VeChungToi/bulb.png" alt="">
                         </div>
                         <p>Giới thiệu về hệ thống</p>
                     </div>
@@ -692,7 +729,7 @@
                 <div class="footer_inwe_infor">
                     <div class="row_infor_inwe">
                         <div class="infor_image_footer">
-                            <img src="./image/Footer/VeChungToi/bus (1).png" alt="">
+                            <img src="../image/Footer/VeChungToi/bus (1).png" alt="">
                         </div>
                         <p>Danh sách nhà xe</p>
                     </div>
@@ -700,7 +737,7 @@
                 <div class="footer_inwe_infor">
                     <div class="row_infor_inwe">
                         <div class="infor_image_footer">
-                            <img src="./image/Footer/VeChungToi/bus-stop.png" alt="">
+                            <img src="../image/Footer/VeChungToi/bus-stop.png" alt="">
                         </div>
                         <p>Danh sách bến xe</p>
                     </div>
@@ -708,7 +745,7 @@
                 <div class="footer_inwe_infor">
                     <div class="row_infor_inwe">
                         <div class="infor_image_footer">
-                            <img src="./image/Footer/VeChungToi/telephone.png" alt="">
+                            <img src="../image/Footer/VeChungToi/telephone.png" alt="">
                         </div>
                         <p>Tuyển dụng</p>
                     </div>
@@ -728,14 +765,14 @@
         <div class="footer_app">
             <p>Tải ứng dụng tại</p>
             <div id="Apple" class="app_Content">
-                <img src="./image/Footer/VeChungToi/app-store.png" alt="">
+                <img src="../image/Footer/VeChungToi/app-store.png" alt="">
                 <div class="content_download">
                     <h1>Download ExpressTickets on</h1>
                     <p>App Store</p>
                 </div>
             </div>
             <div id="Android" class="app_Content">
-                <img src="./image/Footer/VeChungToi/game.png" alt="">
+                <img src="../image/Footer/VeChungToi/game.png" alt="">
                 <div class="content_download">
                     <h1>Download ExpressTickets on</h1>
                     <p>Google Play</p>
@@ -745,7 +782,7 @@
         <div class="footer_image">
             <h1>Express Tickets</h1>
             <p>Đưa bạn đi khắp muôn nơi</p>
-            <img src="./image/Footer/VeChungToi/VietNam.png" alt="VietNam">
+            <img src="../image/Footer/VeChungToi/VietNam.png" alt="VietNam">
         </div>
     </div>
     <!-- ----------------------------------COPYRIGHT----------------------------------- -->
@@ -754,6 +791,6 @@
     </div>
     
 </body>
-<script rel="Script" src="./Script/HomePage.js"> </script>
+<script rel="Script" src="../Script/HomePage.js"> </script>
 </html>
 
