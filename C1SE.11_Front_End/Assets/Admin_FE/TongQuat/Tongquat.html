@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./tongquat.css" />
+</head>
+<body>
+    <div class="container-body">
+        <div class="row">
+            <header id="header">
+                <div class="row header-row">
+                    <div class="col-lg-4">
+                        <img class="logo" src="./public/images/logo.png">
+                    </div>
+                    <div class="col-lg-5">
+                        <h3 class="title">ExpressTickets</h3>
+                        <p class="desc">Nhanh chóng - Tiện Lợi - Dễ dàng</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="company">
+                            <img class="imgCompany" src="./public/images/avatarlogo.png" />
+                            <h4>Tên Doanh Nghiệp</h4>
+                        </div>
+                    </div>
+                </div>
+            </header> 
+        </div>
+    <!-- content -->
+    <div class="row sidebar">
+        <div class="col-lg-2 sidebar-menu">
+                <ul class="list-menu">
+                    <li class="icon-menu">Quản lý khách hàng</li>
+                    <li class="icon-menu">Quản lý đối tác</li>
+                    <li class="icon-menu">Tin nhắn</li>
+                    <li class="icon-menu">Quản lý hợp đồng</li>
+                    <li class="icon-menu">Dánh giá của các nhà xe</li>
+                </ul>
+        </div>
+        <div class="col-lg-10">
+            <div class="row">
+                <h1 class="title-content"><img id="btnShowMenu" src="./public/images/menu.png" width="50px" height="50px" style="margin-right: 10px;" alt="">Tổng quát</h1>
+            </div>
+            <div class="row">
+                <div class="chart">
+                <div class="col-lg-5 chart-circle card-item mt-4">
+                    <div class="card  ">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4 >Báo cáo gần đây</h5>
+                            </div>
+                            <div class="status">
+                                <div class="imgChart text-center">
+                                    <img class="imgChart-img" src="./public/images/Line-GraphRemoveBackground.png" alt="">
+                                </div>
+                           
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-5 chart-line card-item mt-4">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="card-title">
+                            </div>
+                            <div class="status">
+                                <div class="row">
+                                    <div class="row">
+                                        <span class="red"></span> Nhà xe A
+                                    </div>
+                                    <div class="row">
+                                        <span class="blue"></span>Nhà xe B
+                                    </div>
+                                </div>
+                                <div class="imgChart text-center mt-5">
+                                    <img class="imgChart-img" src="./public/images/circle-chart.png" style="margin-left: 100px;" width="300" alt="">
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        
+        </div>
+        </div>
+        </div>
+     </div>
+    </div>
+</div>
+<script>
+    document.getElementById('btnShowMenu').addEventListener('click', function() {
+    var sidebarMenu = document.querySelector('.sidebar-menu');
+    sidebarMenu.classList.toggle('show-menu');
+
+    if (sidebarMenu.classList.contains('show-menu')) {
+        sidebarMenu.style.display = 'none';
+    } else {
+        sidebarMenu.style.display = 'block';
+    }
+});
+</script>
+</body>
+</html>

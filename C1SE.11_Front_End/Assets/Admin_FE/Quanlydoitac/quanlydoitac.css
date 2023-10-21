@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,
+.col-lg-9,.col-lg-10 {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+.container {
+    width: 1500px;
+}
+/* header */
+#header {
+    width: 100%;
+    background: #A8C0ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+}
+
+.header-row {
+    align-items: center;
+}
+.logo {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.title {
+    color: #000;
+    font-family: Sans Serif Collection;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+    letter-spacing: 7.5px;
+    margin-left: 70px;
+}
+.desc {
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+}
+.company {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 29px 0px 0px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 135px;
+    margin-left: 12px;
+}
+.company h4 {
+    display: inline;
+}
+.imgCompany {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+}
+/* content css */
+.sidebar {
+  
+    height: 100%;
+}
+.sidebar-menu {
+    background-color:  #E0E0E0;
+}
+.list-menu {
+    list-style: none;
+}
+.list-menu .icon-menu {
+    color: #000;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    padding-left: 16px;
+    height: 80px;
+
+}
+.list-menu .icon-menu:hover {
+    cursor: pointer;
+    background-color:  #A8C0ED;
+    border-radius: 30px;
+}
+.list-menu .icon-menu:active {
+    border-radius: 30px;
+    background: #A8C0ED
+}
+.list-menu .icon-menu:first-child {
+    margin-top: 30px;
+}
+.list-menu .icon-menu i {
+    margin-right: 16px ;
+    margin-left: 0;
+    width: 20px;
+}
+.title-content {
+    margin-top: 10px;
+}
+.date {
+display: flex;
+margin-top: 10px;
+align-items: center;
+justify-content: center;
+width: 220px;
+height: 46px;
+margin-left: 30px;
+flex-shrink: 0;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+background: #E0E0E0;
+}
+.date i {
+    margin-right: 10px;
+}
+
+.card-body {
+    height: 600px;
+    background-color:#E0E0E0;
+    
+}
+.card-title {
+    display: flex;
+    align-items: center;
+}
+.card-title h5 {
+    display: inline;
+}
+.chart {
+    display: flex;
+    justify-content: space-evenly;
+}
+.imgChart {
+    height: 300px;
+}
+.imgChart-img {
+    max-width: 600px;
+    max-height: 500px;
+}
+.card-item {
+border-radius: 10px;    
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+}
+.chart-circle {
+    margin-left: 100px;
+}
+.status {
+    padding-bottom: 30px;
+}
+.status .row {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.red,.blue{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.blue {
+    width: 60px;
+    height: 25px;
+    background: blue;
+}
+.red {
+    width: 60px;
+    height: 25px;
+    background: red;
+}
+
+/* Quan ly khach hang css */
+.btngroup {
+    justify-content: space-evenly;
+}
+.btnadd, .btndelete {
+    width: 110px;
+    height: 45px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 15px;
+}
+.table-customer {
+    margin-left: 20px;
+    border-left: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    font-size: 18px;
+
+}
+.btnEdit {
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 10px 10px 10px 10px;
+}
