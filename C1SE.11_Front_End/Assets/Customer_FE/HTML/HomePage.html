@@ -60,16 +60,21 @@
                         <div id="start" class="search_location">
                             <div id="div_start" class="list_start hidden">
                                 <p>Tỉnh, Thành phố</p>
-                                <ul>
+                                <ul id="city_list">
                                     <li>Đà Nẵng</li>
                                     <li>Hà Nội</li>
                                     <li>Sài Gòn</li>
                                     <li>Nha Trang</li>
                                     <li>Khánh Hoà</li>
+                                    <li>Nghệ An</li>
+                                    <li>Hà Tĩnh</li>
+                                    <li>Thanh Hoá</li>
+                                    <li>Quảng Bình</li>
+                                    <li>Quảng Trị</li>
                                 </ul>
                             </div>
                             <img src="../image/Header/placeholder.png" alt="start">
-                            <p>Điểm xuất phát</p>
+                            <input type="text" id="searchInput" placeholder="Điểm đi" onkeyup="zmyFunction()" >
                         </div>
                         <div class="line_column">
 
@@ -77,21 +82,21 @@
                         <div id="end" class="search_location ">
                             <div id="div_end" class="list_start hidden">
                                 <p>Tỉnh, Thành phố</p>
-                                <ul>
+                                <ul id="city_list2">
                                     <li>Đà Nẵng</li>
                                     <li>Hà Nội</li>
                                     <li>Sài Gòn</li>
                                     <li>Nha Trang</li>
                                     <li>Khánh Hoà</li>
-                                    <li>Đà Nẵng</li>
-                                    <li>Hà Nội</li>
-                                    <li>Sài Gòn</li>
-                                    <li>Nha Trang</li>
-                                    <li>Khánh Hoà</li>
+                                    <li>Nghệ An</li>
+                                    <li>Hà Tĩnh</li>
+                                    <li>Thanh Hoá</li>
+                                    <li>Quảng Bình</li>
+                                    <li>Quảng Trị</li>
                                 </ul>
                             </div>
                             <img src="../image/Header/placeholder.png" alt="start">
-                            <p>Điểm đến</p>
+                            <input type="text" id="searchInput1" placeholder="Điểm đến" onkeyup="pmyFunction()" >
                         </div>
                         <div class="line_column">
                         </div>
@@ -101,11 +106,17 @@
                             </div>
                             <div class="content_schedule">
                                 <p>Ngày đi</p>
-                                <h1>T5, 16/08/2023</h1>
+                                <div class="dayof_birth">
+                                    <form action="/action_page.php" style="display: flex;">
+                                        <p id="dayOfWeek"></p>
+                                        <input type="date" id="birthday" name="birthday">
+                                        <p id="dayOfWeek"></p>
+                                      </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="search_button">
+                    <div class="search_button" id="searchButton">
                         <p>Tìm chuyến</p>
                     </div>
                 </div>

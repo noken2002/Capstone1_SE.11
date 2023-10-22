@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* CSS cho danh sách */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            border: 1px solid #ddd;
-            z-index: 1;
-            overflow-y: auto;
-            max-height: 150px;
-        }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
-        .dropdown-content a {
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
 </head>
 <body>
-    <div class="dropdown">
-        <div id="showDiv">Click để hiển thị danh sách</div>
-        <div class="dropdown-content" id="dropdownContent">
-            <a href="#">Mục 1</a>
-            <a href="#">Mục 2</a>
-            <a href="#">Mục 3</a>
-            <a href="#">Mục 4</a>
-            <!-- Thêm các mục khác tại đây -->
-        </div>
-    </div>
 
-    <script>
-        const showDiv = document.getElementById('showDiv');
-        const dropdownContent = document.getElementById('dropdownContent');
+<h2>My Phonebook</h2>
 
-        // Lắng nghe sự kiện khi một mục trong danh sách được chọn
-        dropdownContent.addEventListener('click', (event) => {
-            // Lấy nội dung của mục được chọn
-            const selectedValue = event.target.textContent;
-            // Hiển thị nội dung được chọn trong div showDiv
-            showDiv.textContent = selectedValue;
-        });
-    </script>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
 </body>
 </html>

@@ -69,11 +69,98 @@ window.onclick = function(event) {
     }
 }
 
+//Xử lý dự đoán Điểm đi Điểm đến
+function zmyFunction() {
+  var input, filter, ul, li, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("city_list");
+  li = ul.getElementsByTagName("li");
+  for (var i = 0; i < li.length; i++) {
+      txtValue = li[i].textContent || li[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
 
+function pmyFunction() {
+  var input, filter, ul, li, txtValue;
+  input = document.getElementById("searchInput1");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("city_list2");
+  li = ul.getElementsByTagName("li");
+  for (var i = 0; i < li.length; i++) {
+      txtValue = li[i].textContent || li[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
 
+// Lấy danh sách các thẻ li
+const cityItems = document.querySelectorAll('#city_list li');
 
+// Lấy thẻ input
+const searchInput = document.getElementById('searchInput');
 
+// Gán sự kiện khi thẻ li được chọn
+cityItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        // Lấy nội dung của thẻ li và gán vào input
+        searchInput.value = item.textContent;
+        // Ẩn danh sách các mục (hoặc thực hiện xử lý khác tùy ý)
+        document.getElementById('div_start').classList.add('hidden');
+    });
+});
+
+const cityItems1 = document.querySelectorAll('#city_list2 li');
+
+// Lấy thẻ input
+const searchInput1 = document.getElementById('searchInput1');
+
+// Gán sự kiện khi thẻ li được chọn
+cityItems1.forEach((item) => {
+    item.addEventListener('click', () => {
+        // Lấy nội dung của thẻ li và gán vào input
+        searchInput1.value = item.textContent;
+        // Ẩn danh sách các mục (hoặc thực hiện xử lý khác tùy ý)
+        document.getElementById('div_end').classList.add('hidden');
+    });
+});
+
+const searchButton = document.getElementById('searchButton');
+
+// Gắn sự kiện khi nút tìm kiếm được click
+searchButton.addEventListener('click', () => {
+    // Chuyển qua trang index.html
+    window.location.href = 'LishCoach.html';
+});
+
+// Lấy thứ của ngày hiện tại
+function getDayOfWeek() {
+    const dateInput = document.getElementById("birthday");
+    const selectedDate = new Date(dateInput.value);
+    const daysOfWeek = ["2", "3", "4", "5", "6", "7", "CN"];
+    const dayOfWeek = daysOfWeek[selectedDate.getDay()];
+    return dayOfWeek;
+  }
   
+  // Cập nhật thứ trong phần p
+  function updateDayOfWeek() {
+    const dayOfWeekElement = document.getElementById("dayOfWeek");
+    const dayOfWeek = getDayOfWeek();
+    dayOfWeekElement.innerText = "Thứ " + dayOfWeek + ", ";
+  }
+  
+  // Gắn sự kiện thay đổi vào trường ngày
+  const dateInput = document.getElementById("birthday");
+  dateInput.addEventListener("change", updateDayOfWeek);
+
 
 
 
