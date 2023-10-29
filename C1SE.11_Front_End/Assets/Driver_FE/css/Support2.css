@@ -9,55 +9,72 @@ html
     height: 100%;
 }
 /* ------------------------------------ HEADER ------------------------------------- */ -->
-header
-{
-    height: 100px;
-    flex-shrink: 0;
-    padding-left: 163px;
-    padding-right: 163px;
-    background-color: aliceblue;
-    display: flex;
+#header {
+    width: 100%;
+    background: #A8C0ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+}
+
+.header-row {
     align-items: center;
-    justify-content: space-between;
 }
-.header_logo
-{
-    width: 300px;
-    height: 70px;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
+.logo {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
 }
-.header a
-{
-    border-radius: 6px;
-    height: 104px;
-    width: 250px;
-}
-.header_logo a img
-{
-    width: 165px;
-    height: 70px;
-    flex-shrink: 0;
-}
-.header_category
-{
-    display: flex;
-    height: 26.667px;
-    flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-}
-.header_category a 
-{
+.title {
     color: #000;
     font-family: Sans Serif Collection;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 40px; /* 133.333% */
     letter-spacing: 7.5px;
+    margin-left: 70px;
+}
+.desc {
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+}
+.company {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 29px 0px 0px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103%;
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.company h4 {
+    display: inline;
+    font-weight: 500;
+}
+.company .iconLogout {
+        --s: 0.1em;   /* the thickness of the line */
+        --c: #2c4bff; /* the color */
+        color: #0000;
+        padding-bottom: var(--s);
+        background: 
+          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: 0.5s;   
+}
+.company .iconLogout:hover {
+    --_p: 100%;
+    cursor: pointer;
+}
+.iconLogout {
+    font-weight: 900;
+    font-size: 38px;
+    margin-right: 25px;
 }
 .Exit
 {
@@ -80,6 +97,7 @@ header
 /* ------------------------------------ TOOLBAR ------------------------------------- */ -->
 .toolbar
 {
+    margin-top: 30px;
     height: 65px;
     flex-shrink: 0;
     padding-left: 163px;
@@ -88,6 +106,7 @@ header
     grid-template-columns: 260px 260px 260px 260px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 .toolbar a
 {
@@ -125,6 +144,17 @@ header
     border-radius: 14px;
     background: #A8C0ED;
 }
+.toolbar a:hover {
+    background-color: #a8c0ed;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.toolbar a:last-child:hover {
+    color: red;
+    font-weight: 800px;
+    background-color: transparent;
+}
 /* ------------------------------------ CONTENT ------------------------------------- */ -->
 .back
 {
@@ -146,7 +176,7 @@ header
     font-family: Sen;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 40px;  
 }
 content
@@ -158,7 +188,7 @@ content
     padding-left: 164px;
     padding-right: 162px;
 }
-content .border
+content h4
 {
     width: 925px;
     height: 40px;
@@ -166,15 +196,13 @@ content .border
     margin-top: 24px;
     margin-bottom: 24px;
     margin-left: 93px;
-    border-left: 5px solid #A8C0ED;
+    font-weight: 600;
     background: #FFF;
     display: flex;
     align-items: center;
 }
 content div
 {
-    display: flex;
-    justify-content: flex-start;
     margin-left: 118px;
     margin-right: 119px;
     color: #000;
@@ -183,6 +211,10 @@ content div
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
+}
+.iconback {
+    margin-right: 16px;
+    cursor: pointer;
 }
 content .number
 {
