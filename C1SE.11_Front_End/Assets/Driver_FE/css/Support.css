@@ -9,55 +9,73 @@ html
     height: 100%;
 }
 /* ------------------------------------ HEADER ------------------------------------- */ -->
-header
-{
-    height: 100px;
-    flex-shrink: 0;
-    padding-left: 163px;
-    padding-right: 163px;
-    background-color: aliceblue;
-    display: flex;
+#header {
+    width: 100%;
+    background: #A8C0ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.header-row {
     align-items: center;
-    justify-content: space-between;
 }
-.header_logo
-{
-    width: 300px;
-    height: 70px;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
+.logo {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
 }
-.header a
-{
-    border-radius: 6px;
-    height: 104px;
-    width: 250px;
-}
-.header_logo a img
-{
-    width: 165px;
-    height: 70px;
-    flex-shrink: 0;
-}
-.header_category
-{
-    display: flex;
-    height: 26.667px;
-    flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-}
-.header_category a 
-{
+.title {
     color: #000;
     font-family: Sans Serif Collection;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 40px; /* 133.333% */
     letter-spacing: 7.5px;
+    margin-left: 70px;
+}
+.desc {
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+}
+.company {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 29px 0px 0px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103%;
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.company h4 {
+    display: inline;
+    font-weight: 500;
+}
+.company .iconLogout {
+        --s: 0.1em;   /* the thickness of the line */
+        --c: #2c4bff; /* the color */
+        color: #0000;
+        padding-bottom: var(--s);
+        background: 
+          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: 0.5s;   
+}
+.company .iconLogout:hover {
+    --_p: 100%;
+    cursor: pointer;
+}
+.iconLogout {
+    font-weight: 900;
+    font-size: 38px;
+    margin-right: 25px;
 }
 .Exit
 {
@@ -125,6 +143,17 @@ header
     border-radius: 14px;
     background: #A8C0ED;
 }
+.toolbar a:hover {
+    background-color: #a8c0ed;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.toolbar a:last-child:hover {
+    color: red;
+    font-weight: 800px;
+    background-color: transparent;
+}
 /* ------------------------------------ CONTENT ------------------------------------- */ -->
 .Question
 {
@@ -148,6 +177,10 @@ header
     box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding-left: 25px; 
 }
+.Question .Regular_Question:hover {
+    color: red;
+    cursor: pointer;
+}
 .Question a
 {
     color: #000;
@@ -159,6 +192,11 @@ header
     display: flex;
     padding-left: 37px;
     padding-top: 24px;
+}
+.Question a:hover {
+    font-size: 22px;
+    color: blue;
+    cursor: pointer;
 }
 .Technical_Assistance
 {
@@ -181,6 +219,10 @@ header
     background: #FFF;
     box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding-left: 25px;
+}
+.Technical_Assistance .Bar:hover {
+    color: red;
+    cursor: pointer;
 }
 .Technical_Assistance .Video
 {

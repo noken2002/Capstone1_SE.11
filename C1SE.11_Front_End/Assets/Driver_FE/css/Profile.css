@@ -9,55 +9,73 @@ html
     height: 100%;
 }
 /* ------------------------------------ HEADER ------------------------------------- */ -->
-header
-{
-    height: 100px;
-    flex-shrink: 0;
-    padding-left: 163px;
-    padding-right: 163px;
-    background-color: aliceblue;
-    display: flex;
+#header {
+    width: 100%;
+    background: #A8C0ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.header-row {
     align-items: center;
-    justify-content: space-between;
 }
-.header_logo
-{
-    width: 300px;
-    height: 70px;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
+.logo {
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
 }
-.header a
-{
-    border-radius: 6px;
-    height: 104px;
-    width: 250px;
-}
-.header_logo a img
-{
-    width: 165px;
-    height: 70px;
-    flex-shrink: 0;
-}
-.header_category
-{
-    display: flex;
-    height: 26.667px;
-    flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-}
-.header_category a 
-{
+.title {
     color: #000;
     font-family: Sans Serif Collection;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 40px; /* 133.333% */
     letter-spacing: 7.5px;
+    margin-left: 70px;
+}
+.desc {
+    color: #000;
+    font-family: Sen;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+}
+.company {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 29px 0px 0px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103%;
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.company h4 {
+    display: inline;
+    font-weight: 500;
+}
+.company .iconLogout {
+        --s: 0.1em;   /* the thickness of the line */
+        --c: #2c4bff; /* the color */
+        color: #0000;
+        padding-bottom: var(--s);
+        background: 
+          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: 0.5s;   
+}
+.company .iconLogout:hover {
+    --_p: 100%;
+    cursor: pointer;
+}
+.iconLogout {
+    font-weight: 900;
+    font-size: 38px;
+    margin-right: 25px;
 }
 .Exit
 {
@@ -113,17 +131,27 @@ header
 }
 .toolbar .active
 {
-    color: #000;
+    color: red;
     font-family: Sen;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 41.5px;
     width: 260px;
     height: 55px;
     flex-shrink: 0;
     border-radius: 30px 0px 0px 30px;
-    background: #A8C0ED;
+}
+.toolbar a:hover {
+    background-color: #a8c0ed;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.toolbar a:last-child:hover {
+    color: red;
+    font-weight: 800px;
+    background-color: transparent;
 }
 /* ------------------------------------ PROFILE ------------------------------------- */ -->
 .header
@@ -138,15 +166,16 @@ header
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 .header div
 {
     margin-left: 39px;
-    color: #000;
+    color: #fff;
     font-family: Sen;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 40px;
 }
 .User_Info
@@ -164,13 +193,16 @@ header
 {
     color: #000;
     font-family: Sen;
-    font-size: 20px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px; 
     text-decoration-line: underline;
     margin-left: 69px;
     margin-bottom: 28px;
+}
+.User_Info .Under_Line:hover {
+    color: red;
 }
 .User_Info .Info
 {
@@ -193,6 +225,7 @@ header
 {
     margin-right: 193px;
     margin-left: 96px;
+    font-size: 20px;
 }
 .User_Info .Info .Line
 {
@@ -215,6 +248,7 @@ header
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
+    margin-bottom: 16px;
     text-decoration-line: underline;
 }
 .License .Info
@@ -248,6 +282,7 @@ header
     border-radius: 10px;
     opacity: 0.55;
     background: #D9D9D9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .Picture .Right
 {
@@ -255,6 +290,7 @@ header
     flex-direction: column;
     align-items: center;
     padding-right: 257px;
+   
 }
 .Picture .Right .Right_Picture
 {
@@ -264,4 +300,5 @@ header
     border-radius: 10px;
     opacity: 0.55;
     background: #D9D9D9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

@@ -6,22 +6,31 @@
     <title>DriverUI</title>
     <link rel="stylesheet" href="./css/History.css">
     <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!-- ----------------------------------HEADER--------------------------------------->
-    <header>
-        <div class="header_logo">
-            <a href="#">
-                <img src="./image/DriverUI/Logo.png" alt="Logo_System">
-            </a>
-        </div>
-        <div class="header_category">
-            <a>ExpressTickets</a>
-            <a>Nhanh chóng - Tiện lợi - Dễ dàng</a>
-        </div>
-        <div class="Exit"><img src="./image/DriverUI/Sign_in_squre.png">Đăng xuất</div>
-    </header>
+    <div class="row">
+        <header id="header">
+            <div class="row header-row">
+                <div class="col-lg-4">
+                    <img class="logo" src="./image/DriverUI/logocopy.png">
+                </div>
+                <div class="col-lg-5">
+                    <h3 class="title">ExpressTickets</h3>
+                    <p class="desc">Nhanh chóng - Tiện Lợi - Dễ dàng</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="company">
+                        <i class="fa-solid fa-arrow-right-from-bracket iconLogout"></i>
+                        <h4>Đăng xuất</h4>
+                    </div>
+                </div>
+            </div>
+        </header> 
+    </div>
     <!-- ----------------------------------TOOLBAR------------------------------------->
     <div class="toolbar">
         <a href="DriverUI.html">Công việc</a>
@@ -40,21 +49,18 @@
     </div>
     <!-- ----------------------------------CALENDER------------------------------------->
     <div class="calender">
-        <div onclick="toggleDropdown()" class="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <path d="M10.4167 14.5835H39.5834" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10.4167 25H31.2501" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10.4167 35.4165H22.9167" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
-            </svg>Sắp xếp</div>
+        <div onclick="toggleDropdown()" class="dropdown"><i style="margin-right: 16px;" class="fa-solid fa-arrow-down-wide-short"></i>Sắp xếp</div>
         <div id="dropdownContent" class="dropdown-content">
             <a>Đánh giá tăng dần</a>
             <a>Đánh giá giảm đân</a>
             <a>Ngày đi cũ dần</a>
             <a>Ngày đi mới dần</a>
         </div>
-        <div><img src="./image/History/Calendar.png">Calender</div>
+        <div><i style="margin-right: 16px;" class="fa-regular fa-calendar"></i>Calender</div>
     </div>
     <!-- ----------------------------------NOTICE------------------------------------->
     <div class="notice">
+        
         <a>Xuất phát: 20h00 21-09-2023</a>
         <a>Kết thúc: 8h00 22-09-2023</a>
         <a>Đánh giá: 4/5 <img src="./image/History/Star.png" class="star"></a>
@@ -105,15 +111,25 @@
         <a>Chi tiết <img src="./image/History/down.png" class="down"></a>
     </div>
     <div class="page">
-        <a><< < </a>
-        <a class="page_number">1</a>
-        <a class="page_number">2</a>
-        <a class="page_number">3</a>
-        <a>...</a>
-        <a class="page_number">8</a>
-        <a class="page_number">9</a>
-        <a class="page_number">10</a>
-        <a> > >></a>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </div>
     <script src="./Script/History.js"></script>
 </body>
