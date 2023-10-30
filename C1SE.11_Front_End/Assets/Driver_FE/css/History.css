@@ -213,6 +213,9 @@ html
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     margin-top: 260px;
 }
+#dropdownContent a:hover{
+    color: #fff;
+}
 .calender .dropdown:hover
 {
     border-bottom: 5px solid blue;
