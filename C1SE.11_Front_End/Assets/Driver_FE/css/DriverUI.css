@@ -386,7 +386,7 @@ html
 #centeredDiv .Camera
 {
     width: 1112px;
-    height: 723px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 30px;
     background: #FFF;

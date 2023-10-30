@@ -70,12 +70,15 @@
         <div class="Right">
             <div class="Check">
                 <a id="startCamera"><img style="margin-right: 10px;" src="./image/DriverUI/Qr Code.png">Kiểm tra vé bằng QR</a>
-                <a id="startCamera"><img style="margin-right: 10px;" src="./image/DriverUI/Face ID.png">Kiểm tra vé bằng mặt</a>
+                <!-- <a id="startCamera"><img style="margin-right: 10px;" src="./image/DriverUI/Face ID.png">Kiểm tra vé bằng mặt</a> -->
                 <div id="centeredDiv" >
                     <div id="cameraContainer" class="Camera">
                         <div class="Header">QUÉT MÃ QR</div>
                         <video id="cameraView" autoplay playsinline class="CameraView"></video>
-                        <div class="Back">< Quay lại</div>
+                        <div class="select">
+                            <label for="videoSource">Camera: </label><select id="videoSource"></select>
+                        </div>
+                        <div id="closeModal" class="Back">Đóng</div>
                     </div>
                 </div>
             </div>
@@ -98,5 +101,9 @@
         </div>
     </div>
 </body>
+
+<!-- <script rel="Script" src="./Script/zxing-browser.min.js"></script> -->
+<script type="text/javascript" src="https://unpkg.com/@zxing/browser@latest"></script>
+<script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
 <script rel="Script" src="./Script/DriverUI.js"> </script>
 </html>
