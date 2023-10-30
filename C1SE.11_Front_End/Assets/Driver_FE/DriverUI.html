@@ -41,7 +41,7 @@
     <!-- ----------------------------------MANAGE------------------------------------->
     <div class="manage">
         <a class="active" href="DriverUI.html">Quản lý chỗ xe</a>
-        <a href="#">Quản lý khách hàng</a>
+        <a href="Job.html">Quản lý khách hàng</a>
     </div>
     <!-- ----------------------------------Notification------------------------------>
     <div class="notification">
@@ -79,6 +79,7 @@
                             <label for="videoSource">Camera: </label><select id="videoSource"></select>
                         </div>
                         <div id="closeModal" class="Back">Đóng</div>
+                        <div class="Back"> Quay lại</div>
                     </div>
                 </div>
             </div>
@@ -92,11 +93,17 @@
         </div>
         <div class="Left">
             <div class="Floor">
-                <b class="active">Tầng 1</b>
-                <b>Tầng 2</b>
+                <b class="active" id="searFoor1">Tầng 1</b>
+                <b id="searFoor2">Tầng 2</b>
             </div>
             <div class="Bus">
-    
+                <div class="DriverSpaces">
+                    <div>
+                        <img class="DriverWheel" src="./image/DriverUI/SteeringWheel.png" />
+                    </div>
+                </div>
+                <div class="Seats">
+                </div>
             </div>
         </div>
     </div>
