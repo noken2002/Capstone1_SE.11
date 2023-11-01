@@ -8,7 +8,7 @@ class TicketController {
     async generateQRCode(req, res) {
         try {
             let content = req.params.id;
-            let qrContent = '127.0.0.1:5500/ticket?id=' + content;
+            let qrContent = 'http://127.0.0.1:5500/C1SE.11_Front_End/Assets/Driver_FE/showTicket.html?id=' + content;
             QRCode.toDataURL(qrContent, function (err, url) {
                 res.send({
                     status: 200,

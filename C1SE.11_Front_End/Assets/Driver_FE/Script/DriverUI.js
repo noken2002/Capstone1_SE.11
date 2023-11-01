@@ -98,6 +98,8 @@ startCameraButton.addEventListener("click", async () => {
                     // close camera
                     const tracks = stream.getTracks();
                     tracks.forEach((track) => track.stop());
+                    cameraView.srcObject = null;
+                    centeredDiv.style.display = "none";
                 }
             }
         });

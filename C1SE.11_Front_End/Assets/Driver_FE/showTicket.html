@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/showTicket.css">
+    <title>InforTicket</title>
+</head>
+<body>
+    <!-- --------------------------------------TicketInfor-------------------------------- -->
+    <div class="ticket_infor">
+        <div class="text_infor">
+            <form action="#">
+                <p>Thông tin vé xe</p>
+                <label for="fmave">Mã vé</label>
+                <input type="text" id="fmave" name="fmave"><br><br>                      
+                <label for="fname">Họ và tên khách hàng</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="fsdt">Số điện thoại</label>
+                <input type="text" id="fsdt" name="fsdt"><br><br>
+                <label for="lpartner">Tên đối tác</label>
+                <input type="text" id="lpartner" name="lpartner" disabled><br><br>
+                <label for="lngaydat">Ngày đặt vé</label>
+                <input type="text" id="lngaydat" name="lngaydat" disabled><br><br>
+                <label for="lgiuongso">Giường số</label>
+                <input type="text" id="lgiuongso" name="lgiuongso" disabled><br><br>
+                <label for="lgiave">Giá vé</label>
+                <input type="text" id="lgiave" name="lgiave" disabled><br><br>
+                <label for="ltinhtrangve">Tình trạng vé</label>
+                <input type="text" id="ltinhtrangve" name="ltinhtrangve" disabled><br><br>
+                <div class="btnticket_choose">
+                    <div class="btn_access noticket">
+                        Trở lại
+                    </div>
+                    <div class="btn_access okticket">
+                        Xác nhận
+                    </div>
+                    
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+<script type="text/javascript" src="./Script/showTicket.js"></script>
+</html>
