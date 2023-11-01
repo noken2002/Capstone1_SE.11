@@ -4,8 +4,10 @@ document.addEventListener('click', function () {
     const HideShow = document.getElementById('hideShow')
     const Notice = document.getElementById('notice')
 
-    HideShow.addEventListener('click', function () {
-        if (Notice.style.display === 'none') {
+    HideShow.addEventListener('click',function()
+    {
+        if(Notice.style.display === 'none')
+        {
             Notice.style.display = 'grid';
         }
         else {
@@ -108,4 +110,3 @@ startCameraButton.addEventListener("click", async () => {
         console.error("Không thể truy cập camera:", error);
     }
 });
-
