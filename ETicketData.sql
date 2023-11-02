@@ -58,6 +58,9 @@ CREATE TABLE Trips (
     duration INT NOT NULL
 );
 
+ALTER TABLE Trips
+ADD departure_date DATE;
+
 -- tạo bảng Citys chứa các thuộc tính
 
 CREATE TABLE Citys (
@@ -209,6 +212,10 @@ INSERT INTO Trips (trip_id, trip_name, origin, destination, distance, duration)
 VALUES
     ('Trip1', 'Trip Name 1', 'Origin 1', 'Destination 1', 10.50, 12.06),
     ('Trip2', 'Trip Name 2', 'Origin 2', 'Destination 2', 75.25, 90.00);
+select*from Trips
+UPDATE Trips
+SET departure_date = '2023-12-10'
+WHERE trip_id = 'Trip1' or trip_id = 'Trip2';
 
 INSERT INTO List_visits (numerical_order, city_id, note, trip_id)
 VALUES
@@ -245,6 +252,9 @@ VALUES
 
 
 
+SELECT * FROM Trips
+WHERE origin = N'Origin 1' and destination = N'Destination 1' and departure_date = '2023-12-10';
+
 SELECT
     Tickets.ticket_id,
     Customers.full_name AS customer_name,
@@ -266,3 +276,6 @@ INNER JOIN Trips ON Tickets.trip_id = Trips.trip_id
 -- Liên kết bảng Tickets với bảng Coaches
 INNER JOIN Coaches ON Tickets.coach_id = Coaches.coach_id
 WHERE Tickets.ticket_id = 'Ticket1';
+
+select origin from Trips
+where origin 

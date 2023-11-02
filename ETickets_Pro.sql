@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE GetTicketInformation
+﻿ALTER PROCEDURE GetTicketInformation
     @TicketID VARCHAR(20)
 AS
 BEGIN
@@ -7,6 +7,7 @@ BEGIN
         Customers.full_name AS customer_name,
         Partners.company_name AS partner_name,
         Trips.trip_name,
+		Customers.phone_number AS phone_number,
         Coaches.license_plate AS coach_license_plate,
         Tickets.departure_datetime,
         Tickets.arrival_datetime,
@@ -25,3 +26,12 @@ BEGIN
     WHERE Tickets.ticket_id = @TicketID;
 END;
 EXEC GetTicketInformation'Ticket1'
+
+CREATE PROCEDURE GetOriginAndDestination (@origin NVARCHAR(100),@destination NVARCHAR(100))
+AS
+BEGIN
+	SELECT origin,destination
+	FROM Trips
+END;
+
+EXEC GetOriginAndDestination (N'Origin 1',N'Destination 1')

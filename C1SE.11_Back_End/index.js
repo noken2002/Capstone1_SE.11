@@ -1,7 +1,10 @@
 
 const express = require('express'); 
 const morgan = require('morgan');
+const cloudinary = require('cloudinary').v2;
 var cors = require('cors')
+const multer = require('multer')
+const upload = multer({dest: 'upload/'});
 const app = express()
 
 app.use(cors())
@@ -10,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.raw());
 app.use(express.text());
 app.use(morgan('combined'));
+
 
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*"); // Cho phép tất cả các origin
@@ -20,6 +24,13 @@ app.use((req, res, next) => {
 
 const dotenv = require('dotenv');
 dotenv.config();  
+
+
+cloudinary.config({
+    cloud_name:process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_SECRET_KEY
+});
 
 const port = process.env.PORT || 3000
 
