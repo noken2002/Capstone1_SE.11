@@ -190,3 +190,14 @@ floor2Button.addEventListener('click', function() {
     floor2Button.classList.add('active');
     floor1Button.classList.remove('active');
 });
+//Show/hide Modal Notification 
+var Bell = document.querySelector('#bell-btn');
+var modal = document.querySelector('#myModal')
+Bell.addEventListener('click', function () {
+    if(modal.style.display === "none" || modal.style.display === "" ) {
+        modal.style.display = 'block';
+    }
+    else {
+        modal.style.display = 'none'
+    }
+})
