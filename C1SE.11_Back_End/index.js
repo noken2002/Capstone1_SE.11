@@ -5,13 +5,14 @@ const cloudinary = require('cloudinary').v2;
 var cors = require('cors')
 const multer = require('multer')
 const upload = multer({dest: 'upload/'});
+var bodyParser = require('body-parser');
 const app = express()
 
 app.use(cors())
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.raw());
-app.use(express.text());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.raw());
+app.use(bodyParser.text());
 app.use(morgan('combined'));
 
 

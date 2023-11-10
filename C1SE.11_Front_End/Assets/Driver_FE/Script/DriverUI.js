@@ -55,7 +55,7 @@ function displayDataFloor2(data) {
 }
 
 function fetchSeatStatusData() {
-    const apiUrl = 'http://localhost:3000/coaches/Coach1';
+    const apiUrl = 'http://localhost:9000/coaches/Coach1';
     const seatsContainer = document.querySelector('.content .Bus .Seats');
     fetch(apiUrl)
     .then(response => response.json())
