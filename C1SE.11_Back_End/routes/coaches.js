@@ -8,6 +8,14 @@ router.get('/:id', async (req, res) => {
     const result = await CoachController.getCoachAndTiketById(id);
     console.log("Result", result);
     res.send(result)
+});
+
+router.get('/get/getCoach', async (req, res) => {
+    console.log("req", req.query)
+    const { coach_id, trip_id } = req.query
+    const result = await CoachController.getCoachAndTiketById2(coach_id, trip_id);
+    console.log("Result", result);
+    res.send(result)
 
 });
 

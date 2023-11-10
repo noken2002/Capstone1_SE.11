@@ -28,7 +28,7 @@ axios.get(`http://localhost:9000/ticket/getTicket/${ticketId}`)
     if (data) {
       fmave.value = data.ticket_id;
       fname.value = data.customer_name;
-      fsdt.value = data.customer_name;
+      fsdt.value = data.phone_number;
       lpartner.value = data.partner_name;
       lngaydat.value = data.departure_datetime;
       lgiuongso.value = data.seat_number;

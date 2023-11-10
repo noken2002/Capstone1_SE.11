@@ -252,7 +252,7 @@
                 <div class="coach_form_buy">
                     <div class="coach_partner">
                         <div class="start_partner_element">
-                            <img src="../image/Content/ListCoach/HoangLong(4).jpg" alt="Xe">
+                            <img src="../image/Content/ListCoach/HoangLong(1).jpg" alt="Xe">
                         </div>
                         <div class="center_partner_element">
                             <div class="infor_coach_partner">
@@ -292,7 +292,7 @@
                         </div>
                         <div class="end_partner_element">
                             <div class="container_price">
-                                <h1>Giá vé : <span>800.000đ</span></h1>
+                                <h1>Giá vé : <span>480.000đ</span></h1>
                                 <p id="showHideDetails" >Thông tin chi tiết <i class="ti-angle-down"></i></p>
                             </div>
                             <div class="button_buy">
@@ -513,8 +513,8 @@
                                     <div class="position_chair">
                                         <div class="bed_under">
                                             <p>Tầng dưới</p>
-                                            <div class="position_under">
-                                                <div class="infor_position">
+                                            <div class="position_under" id="bedUnder">
+                                                <!-- <div class="infor_position">
                                                     <img style="width: 40px; height: 40px; margin:15px 70px 15px 0px;" src="../image/Content/ListCoach/Diver_vl.png" alt="">
                                                 </div>
                                                 <div class="infor_position">
@@ -532,14 +532,14 @@
                                                 <div class="infor_position">
                                                     <img src="../image/Content/ListCoach/chair_off.png" alt="">
                                                     <img src="../image/Content/ListCoach/chair_off.png" alt="">    
-                                                </div>
+                                                </div> -->
                                             </div>
                                             
                                         </div>
                                         <div class="bed_under">
                                             <p>Tầng trên</p>
-                                            <div class="position_under">
-                                                <div class="infor_position">
+                                            <div class="position_upper" id="bedUpper">
+                                                <!-- <div class="infor_position">
                                                     <img src="../image/Content/ListCoach/chair_off.png" alt="">
                                                     <img src="../image/Content/ListCoach/chair_off.png" alt="">    
                                                 </div>
@@ -558,7 +558,7 @@
                                                 <div class="infor_position">
                                                     <img src="../image/Content/ListCoach/chair_on.png" alt="">
                                                     <img src="../image/Content/ListCoach/chair_on.png" alt="">    
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -566,11 +566,12 @@
                                 <div class="line_money">
                                 </div>
                                 <div class="money_booking">
-                                    <div class="space_white_money"></div>   
+                                      
                                     <div class="count_money">
                                         <div class="display_money">
                                             <p>Tổng tiền : </p>
-                                            <span>250.000.đ</span>
+                                            <span class="price_text">0</span>
+                                            <span>đ</span>
                                         </div>
                                         <div class="verify_money">
                                             Tiếp tục
@@ -591,27 +592,27 @@
                                         <div class="container_move">
                                             <form>
                                                 <label>
-                                                    <input type="radio" name="radio" checked="">
+                                                    <input type="radio" name="departure_point" checked="">
                                                     <span>18h30 : Bến xe trung tâm thành phố</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="departure_point">
                                                     <span>20h : Huế</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="departure_point">
                                                     <span>23h : Quảng Trị</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="departure_point">
                                                     <span>23h : Quảng Bình</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="departure_point">
                                                     <span>23h : Hà Tĩnh</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="departure_point">
                                                     <span>23h : Nghệ An</span>
                                                 </label>
                                             </form>
@@ -626,27 +627,27 @@
                                         <div class="container_move">
                                             <form>
                                                 <label>
-                                                    <input type="radio" name="radio" checked="">
+                                                    <input type="radio" name="destination" checked="">
                                                     <span>18h30 : Bến xe trung tâm thành phố</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="destination">
                                                     <span>20h : Huế</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="destination">
                                                     <span>23h : Quảng Trị</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="destination">
                                                     <span>23h : Quảng Bình</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="destination">
                                                     <span>23h : Hà Tĩnh</span>
                                                 </label>
                                                 <label>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="destination">
                                                     <span>23h : Nghệ An</span>
                                                 </label>
                                             </form>
@@ -662,7 +663,8 @@
                                         <div class="total_btn">
                                             <div class="display_money1">
                                                 <p>Tổng tiền : </p>
-                                                <span>250.000.đ</span>
+                                                <span class="price_text">0</span>
+                                                <span>đ</span>
                                             </div>
                                             <div class="btn_choose next_btn">
                                                 <p>Tiếp tục</p>
@@ -679,15 +681,15 @@
                                 <div class="input_infor">
                                     <div class="form_getIF">
                                         <label for="fname">Họ và tên</label>
-                                        <input type="text" id="fname" name="firstname" placeholder="Họ tên người đặt vé...">
+                                        <input type="text" id="fname" name="firstname" placeholder="Họ tên người đặt vé..." value="Customer Name 1">
                                     </div>
                                     <div class="form_getIF">
                                         <label for="fname">Số điện thoại</label>
-                                        <input type="text" id="fsdt" name="sdt" placeholder="Số điện thoại...">
+                                        <input type="text" id="fsdt" name="sdt" placeholder="Số điện thoại..." value="123-456-7891">
                                     </div>
                                     <div class="form_getIF">
                                         <label for="fname">Email</label>
-                                        <input type="text" id="femail" name="email" placeholder="Email của bạn...">
+                                        <input type="text" id="femail" name="email" placeholder="Email của bạn..." value="user1@example.com">
                                     </div>
                                     <div class="ticket_Rules">
                                         <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
@@ -705,9 +707,10 @@
                                     <div class="total_btn">
                                         <div class="display_money1">
                                             <p>Tổng tiền : </p>
-                                            <span>250.000.đ</span>
+                                            <span class="price_text">0</span>
+                                            <span>đ</span>
                                         </div>
-                                        <div class="btn_choose next_btn">
+                                        <div id="next_payment" class="btn_choose next_btn">
                                             <p>Tiếp tục</p>
                                         </div>
                                     </div>
@@ -721,7 +724,7 @@
                 <div class="coach_form_buy">
                     <div class="coach_partner">
                         <div class="start_partner_element">
-                            <img src="../image/Content/ListCoach/HoangLong(4).jpg" alt="Xe">
+                            <img src="../image/Content/ListCoach/HoangLong(1).jpg" alt="Xe">
                         </div>
                         <div class="center_partner_element">
                             <div class="infor_coach_partner">
@@ -915,6 +918,34 @@
             </div>
         </div>   
 </div>
+<!-- -----------------------PAYMENT---------------------------- -->
+<div class="form_payment" id="form_payment>
+    <div class="payment animate">
+        <div class="display_formpayment">
+            <h1>Thanh toán</h1>
+            <div class="qr_container" id="qr_container"></div>
+            <form action="/action_page.php">
+                <label for="name">Họ tên khách hàng</label>
+                <input type="text" id="name" name="fullname" disabled value="Customer1">
+                <label for="lname">Điểm đi</label>
+                <input type="text" id="origin" name="lastname" plac disabled>
+                <label for="fname">Điểm đến</label>
+                <input type="text" id="destination" name="firstname" disabled>
+                <label for="fname">Ngày đặt vé</label>
+                <input type="text" id="booking_date" name="firstname" disabled>
+                <label for="fname">Ngày khởi hành</label>
+                <input type="text" id="departure_datetime" name="firstname" disabled>
+                <label for="fname">Tổng tiền</label>
+                <input type="text" id="amount" name="firstname" disabled>
+              </form>
+              <div class="verify_payment">
+                <div id="pay_back" class="okeem">Trở lại</div>
+                <div id="pay_enter" class="okeem" onclick="completed()">Thanh Toán</div>
+              </div>
+        </div>
+    </div>
+</div>
+
     <!-- ----------------------------------FOOTER----------------------------------- -->
     <div class="footer">
         <div class="footer_inwe">
@@ -995,8 +1026,10 @@
     <!-- ----------------------------------COPYRIGHT----------------------------------- -->
     <div class="copy_right">
         <p>Copyright © 2023 Express Tickets. Powered by Group C1SE.11</p>
-    </div> 
+    </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
 <script rel="Script" src="../Script/LishCoach.js"> </script>
 </html>
 
+     

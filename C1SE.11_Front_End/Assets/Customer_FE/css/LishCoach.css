@@ -589,13 +589,6 @@
     font-size: 16px;
     color: #838383;
 }
-.position_under{
-    width: 100%;
-    height: auto;
-    border-radius: 20px 20px 5px 5px;
-    background-color: #D9D9D9;
-    margin-top: 10px;
-}
 .infor_position{
     width: 100%;
     height: auto;
@@ -626,16 +619,17 @@
     height: auto;
 }
 .count_money{
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
     margin: 30px 0;
+    padding: 0 10px;
 }
 .display_money{
-    width: 50%;
     display: flex;
+    margin-right: 10px;
 }
 .display_money>p{
     font-size: 18px;
@@ -1295,6 +1289,180 @@
     height: 1px;
     background-color: #838383;
 }
+/* ------------------------GetQR---------------------- */
+.form_getQR{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    
+}
 
+/* CSS cho tầng dưới */
+.bed_under {
+    margin: 20px;
+}
 
+.position_under {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 270px;
+    width: 100%;
+    border-radius: 20px 20px 5px 5px;
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
+/* CSS cho tầng trên */
+.bed_upper {
+    margin: 20px;
+}
+
+.position_upper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 270px;
+    width: 100%;
+    border-radius: 20px 20px 5px 5px;
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS cho ghế checkbox */
+.seat-label {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: 40px;
+}
+
+.seat-checkbox {
+    display: none;
+}
+
+/* Thêm kiểu con trỏ pointer khi di chuột vào ghế trống */
+.seat-image {
+    cursor: pointer;
+}
+
+/* Thêm kiểu con trỏ not-allowed khi di chuột vào ghế đã đặt */
+.seat-checkbox:disabled + .seat-image {
+    cursor: not-allowed;
+}
+
+.seat-checkbox:checked + .seat-image {
+    background-image: url('../image/Content/ListCoach/chair_get.png') !important;
+}
+
+/* .seat-checkbox:not(:checked) + .seat-image {
+    background-image: url('../image/Content/ListCoach/chair_on.png') !important;
+} */
+/* -----------------PAYMENT--------------------- */
+.form_payment{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.payment{
+    display: flex;
+    width: 100%;
+    height: 630px;
+    justify-content: center;
+}
+.display_formpayment>h1{
+    width: auto;
+    color: #848181;
+    font-size: 28px;
+    font-weight: bold;
+}
+.display_formpayment>form>label{
+    font-size: 16px;
+    color: #838383;
+}
+.display_formpayment>form{
+    width: 80%;
+}
+.display_formpayment{
+    background-color: #fff;
+    width: 60%;
+    overflow: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+.verify_payment{
+    height: 50px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 25px 0px;
+}
+.okeem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 25px 0px;
+    height: 50px;
+    border-radius: 5px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.qr_container{
+    display: flex;
+    flex-direction: column;
+}
+
+#pay_enter{
+    background-color: #FFC107;
+}
+#pay_back{
+    background-color: #4489F0;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
