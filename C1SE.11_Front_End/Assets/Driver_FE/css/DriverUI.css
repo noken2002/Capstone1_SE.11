@@ -399,7 +399,27 @@ html
 
 }
 
+/**xem lại seat_status mô tả*/
+/**trống*/
+.content .Bus .Seat1
+{
+    color:#7DFF99;
+    background-color: #7DFF99;
+    width: 30px;
+    height: 50px;
+}
+
+/**đã đặt chỗ*/ 
 .content .Bus .Seat2
+{
+    color: #FBFD83;
+    background-color: #FBFD83;
+    width: 30px;
+    height: 50px;
+}
+
+/**đã ngồi*/ 
+.content .Bus .Seat3
 {
     color:#FF7676;
     background-color: #FF7676;
@@ -407,10 +427,11 @@ html
     height: 50px;
 }
 
-.content .Bus .Seat3
+/**chuẩn bị xuống*/ 
+.content .Bus .Seat4
 {
-    color:#7DFF99;
-    background-color: #7DFF99;
+    color:#877DFF;
+    background-color: #877DFF;
     width: 30px;
     height: 50px;
 }
@@ -473,7 +494,7 @@ html
             cursor: pointer;
         }
         #myModal {
-            display: block;
+            display: none;
             height: 500px;
             width: 300px;
             background-color: #fff;
