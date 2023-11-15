@@ -1,11 +1,11 @@
 ﻿	
 --Tạo database có tên là expressTickets
 
-CREATE DATABASE expressTickets
+CREATE DATABASE expressTickets;
 
 
-USE expressTickets
-drop database expressTickets
+USE expressTickets;
+--drop database expressTickets
 --Tạo bảng Users chứa các thuộc tính user_id, username, password, email, role, face_recognition_data
 
 CREATE TABLE Users(
@@ -192,7 +192,7 @@ VALUES
  
 INSERT INTO Staffs (staff_id, user_id_, partner_id, image_avatar, full_name, phone_number)
 VALUES
-    ('Staff1', 'User7', 'Partner1', 'https://i.pinimg.com/736x/be/d9/2c/bed92cdaa8c3880d5fe77735bb8fecea.jpg', 'Staff Name 1', '123-456-7895'),
+    ('Staff1', 'User7', 'Partner1', 'https://i.pinimg.com/736x/be/d9/2c/bed92cdaa8c3880d5fe77735bb8fecea.jpg', 'Staff Name 1', '123-456-7895');
 
 INSERT INTO Admins (admin_id, user_id_, full_name, phone_number)
 VALUES
@@ -212,7 +212,7 @@ INSERT INTO Trips (trip_id, trip_name, origin, destination, distance, duration)
 VALUES
     ('Trip1', 'Trip Name 1', 'Origin 1', 'Destination 1', 10.50, 12.06),
     ('Trip2', 'Trip Name 2', 'Origin 2', 'Destination 2', 75.25, 90.00);
-select*from Trips
+
 UPDATE Trips
 SET departure_date = '2023-12-10'
 WHERE trip_id = 'Trip1' or trip_id = 'Trip2';
@@ -277,8 +277,6 @@ INNER JOIN Trips ON Tickets.trip_id = Trips.trip_id
 INNER JOIN Coaches ON Tickets.coach_id = Coaches.coach_id
 WHERE Tickets.ticket_id = 'Ticket1';
 
-select origin from Trips
-where origin;
 
 --Bảng thông báo
 CREATE TABLE Notifications (
