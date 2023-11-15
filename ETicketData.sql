@@ -190,10 +190,6 @@ INSERT INTO Partners (partner_id, company_name, image_avatar, contact_name, cont
 VALUES
     ('Partner1', 'Company 1', 'https://i.pinimg.com/736x/be/d9/2c/bed92cdaa8c3880d5fe77735bb8fecea.jpg', 'Contact 1', 'contact1@example.com', '123-456-7891', 'Address 1', 0.8, 1);
  
-INSERT INTO Staffs (staff_id, user_id_, partner_id, image_avatar, full_name, phone_number)
-VALUES
-    ('Staff1', 'User7', 'Partner1', 'https://i.pinimg.com/736x/be/d9/2c/bed92cdaa8c3880d5fe77735bb8fecea.jpg', 'Staff Name 1', '123-456-7895');
-
 INSERT INTO Admins (admin_id, user_id_, full_name, phone_number)
 VALUES
     ('Admin1', 'User3', 'Admin Name 1', '123-456-7893')
