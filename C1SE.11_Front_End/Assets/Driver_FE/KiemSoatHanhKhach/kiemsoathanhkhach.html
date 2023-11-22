@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DriverUI</title>
-    <link rel="stylesheet" href="./job.css" />
+    <link rel="stylesheet" href="./kiemsoathanhkhach.css" />
     <link rel="shortcut icon" href="./Assets/image/logoWeb.jpg" type="#" />
     <link
       rel="stylesheet"
@@ -43,7 +43,7 @@
           <div class="col-lg-4">
             <img
               class="logo"
-              src="/C1SE.11_Front_End/Assets/Driver_FE/DanhSach/image/Header/Logo.png"
+              src="/C1SE.11_Front_End/Assets/Driver_FE/KiemSoatHanhKhach/image/Header/Logo.png"
             />
           </div>
           <div class="col-lg-5">
@@ -66,7 +66,7 @@
       <a href="../Support.html">Hỗ trợ</a>
       <a href="../Profile.html"
         ><img
-          src="/C1SE.11_Front_End/Assets/Driver_FE/DanhSach/image/Header/profile.png"
+          src="/C1SE.11_Front_End/Assets/Driver_FE/KiemSoatHanhKhach/image/Header/profile.png"
         />
         Hồ sơ</a
       >
@@ -74,16 +74,14 @@
     <!-- ----------------------------------MANAGE------------------------------------->
     <div class="manage">
       <a class="" href="../DriverUI.html">Quản lý chỗ xe</a>
-      <a href="#" class="active">Quản lý khách hàng</a>
+      <a href="../DanhSach/Job.html" class="active">Quản lý hành khách</a>
     </div>
     <div class="row d-flex justify-content-center">
       <hr style="width: 80%" />
     </div>
     <div class="manage">
-      <a href="#" class="active">Xác nhận hành khách</a>
-      <a href="../KiemSoatHanhKhach/kiemsoathanhkhach.html"
-        >Kiểm soát hành khách</a
-      >
+      <a href="../DanhSach/Job.html">Xác nhận hành khách</a>
+      <a class="active" href="#">Kiểm soát hành khách</a>
     </div>
     <div class="row d-flex justify-content-center">
       <hr style="width: 80%" />
@@ -91,7 +89,7 @@
 
     <!-- ----------------------------------Notification------------------------------>
     <div class="row text-center d-flex justify-content-center">
-      <h4>Danh sách khách hàng cần duyệt</h4>
+      <h4>Danh sách hành khách</h4>
       <hr style="width: 50%" />
     </div>
     <div class="container">
@@ -107,13 +105,22 @@
           data-loading-template="loadingTemplate"
         >
           <thead>
-            <tr class="d-none">
-              <th data-field="info" data-formatter="infoFormatter">info</th>
-              <th data-field="location" data-formatter="locationFormatter">
-                location
+            <tr class="">
+              <th data-field="info" data-formatter="infoFormatter">
+                Hành khách
               </th>
+              <th data-field="origin" data-formatter="originFormatter">
+                Điểm đón
+              </th>
+              <th
+                data-field="destination"
+                data-formatter="destinationFormatter"
+              >
+                Điểm trả
+              </th>
+              <th data-field="memo" data-formatter="memoFormatter">Ghi chú</th>
               <th data-field="operate" data-formatter="operateFormatter">
-                Actions
+                Liên hệ
               </th>
             </tr>
           </thead>
@@ -197,7 +204,6 @@
         <img src="./image/Footer/VeChungToi/VietNam.png" alt="VietNam" />
       </div>
     </div>
-
     <!-- ----------------------------------COPYRIGHT----------------------------------- -->
   </body>
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -205,7 +211,7 @@
 
   <script>
     function fetchData(params) {
-      const apiUrl = `http://localhost:9000/driver/customer/boarded?limit=${
+      const apiUrl = `http://localhost:9000/driver/customer?limit=${
         params.data.limit
       }&page=${(params.data.limit + params.data.offset) / params.data.limit}`;
       fetch(apiUrl)
@@ -226,14 +232,19 @@
     function operateFormatter(value, row, index) {
       return `<span>
         <i class="fa-solid fa-phone-volume"></i> 
-        <i style="margin-left: 30px" class="fa-solid fa-user-astronaut"></i>
         </span>`;
     }
     function infoFormatter(value, row, index) {
-      return `Khách: ${row.customer.full_name}<br/>SDT: ${row.customer.phone_number}`;
+      return `Khách: ${row.customer.full_name}<br/>SDT: ${row.customer.phone_number}<br/>Ghế: ${row.seat_number}`;
     }
-    function locationFormatter(value, row, index) {
-      return `Điểm đón: ${row.trip.origin}`;
+    function originFormatter(value, row, index) {
+      return `${row.trip.origin}`;
+    }
+    function destinationFormatter(value, row, index) {
+      return `${row.trip.destination}`;
+    }
+    function memoFormatter(value, row, index) {
+      return row.seat_status != 3 ? 'Chưa lên xe' : 'Đã lên xe';
     }
     $(function () {});
   </script>

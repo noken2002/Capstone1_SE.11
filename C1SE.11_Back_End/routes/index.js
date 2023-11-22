@@ -3,12 +3,11 @@ const ticketRoutes = require('./ticket');
 const coahesRoutes = require('./coaches');
 const customerRoutes = require('./customer');
 const paymentRoutes = require('./payments');
-const tripRoutes = require('./trips');
-
+const tripRoutes = require('./trips')
 
 function route(app) {
     app.get('/', (req, res) => {
-        res.send('API!');
+        res.send('user API!');
     });
     app.use('/users', userRoutes);
     app.use('/ticket', ticketRoutes);
@@ -16,7 +15,6 @@ function route(app) {
     app.use('/customers', customerRoutes);
     app.use('/payment', paymentRoutes);
     app.use('/trip', tripRoutes);
-    
 }
 
-module.exports = route
+module.exports = route;

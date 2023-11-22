@@ -8,6 +8,10 @@ html
 {
     height: 100%;
 }
+.container {
+  max-width: none !important;
+  width: 80% !important;
+}
 /* ------------------------------------ HEADER ------------------------------------- */ -->
 #header {
     width: 100%;
@@ -20,9 +24,10 @@ html
     align-items: center;
 }
 .logo {
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 30px;
+  height: 136px;
 }
 .title {
     color: #000;
@@ -189,10 +194,6 @@ html
 .manage a:hover {
     color:rgb(230, 25, 25);
 }
-
-#hideShow{
-    cursor: pointer;
-}
 /* ------------------------------------ NOTIFICATION ------------------------------------- */ -->
 .notification
 {
@@ -358,7 +359,6 @@ html
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    cursor: pointer;
 }
 .content .Left .Floor .active
 {
@@ -368,74 +368,13 @@ html
 .content  .Bus
 {
     width: 220px;
-    height: 500px;
+    height: 420px;
     flex-shrink: 0;
     background-color: #D9D9D9;
     margin-right: 36px;
     margin-top: 20px;
     border-radius: 10px;
 }
-
-.content .Bus  .DriverSpaces{
-    width: 200px;
-    height: 100px;
-
-}
-
-.content .Bus  .DriverSpaces .DriverWheel{
-   margin: 20px 0 0 20px;
-}
-
-.content .Bus .Seats
-{
-    margin-left: 10px;
-    width: 220px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    column-gap: 20px;
-    row-gap: 5px;
-
-}
-
-/**xem lại seat_status mô tả*/
-/**trống*/
-.content .Bus .Seat1
-{
-    color:#7DFF99;
-    background-color: #7DFF99;
-    width: 30px;
-    height: 50px;
-}
-
-/**đã đặt chỗ*/ 
-.content .Bus .Seat2
-{
-    color: #FBFD83;
-    background-color: #FBFD83;
-    width: 30px;
-    height: 50px;
-}
-
-/**đã ngồi*/ 
-.content .Bus .Seat3
-{
-    color:#FF7676;
-    background-color: #FF7676;
-    width: 30px;
-    height: 50px;
-}
-
-/**chuẩn bị xuống*/ 
-.content .Bus .Seat4
-{
-    color:#877DFF;
-    background-color: #877DFF;
-    width: 30px;
-    height: 50px;
-}
-
 #centeredDiv 
 {
     display: none;
@@ -452,7 +391,7 @@ html
 #centeredDiv .Camera
 {
     width: 1112px;
-    height: auto;
+    height: 723px;
     flex-shrink: 0;
     border-radius: 30px;
     background: #FFF;
@@ -487,50 +426,273 @@ html
     background-color: #fff; /* Màu nền của phần camera */
     padding: 20px; /* Khoảng cách nội dung với lề */
 }
-        #Bell {
-            position: relative;
-        }
-        #bell-btn:hover {
-            cursor: pointer;
-        }
-        #myModal {
-            display: none;
-            height: 500px;
-            width: 300px;
-            background-color: #fff;
-            position: absolute;
-            left: -258px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
-        }
-        #myModal h5 {
-            font-weight: 600;
-            margin-top: 10px;
-            margin-left: 15px;
-        }
-        .list-noti {
-            list-style: none;
-            margin-right: 16px;
-        }
-        .list-noti i {
-            font-size: 35px;
-            margin-right: 10px;
-        }
-        .list-noti li {
-            font-size: 14px;
-        }
-        .item-noti {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            align-items: center;
-        }
-        .noti-func {
-            display: flex;
-            justify-content:space-around;
-            margin-top: 240px;
-
-        }
-        .noti-func span {
-            text-decoration: underline;
-        }
+.footer{
+    width: 100%;
+    height: 440px;
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: start;
+    position: relative;
+  }
+  .footer_inwe{
+    width: 25%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .form_infor{
+    width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 60px;
+  }
+  .footer_inwe_image{
+    margin-top: 56px;
+  }
+  .footer_inwe_image img{
+    width: 140px;
+    border-radius: 5px;
+  }
+  .footer_inwe_content{
+    font-size: 20px;
+    font-weight: bold;
+    color: #444343;
+    margin-top: 20px;
+  }
+  .footer_inwe_infor{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row_infor_inwe{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .row_infor_inwe>p{
+    font-size: 14px;
+    color: #8E8B8B;
+    margin-left: 8px;
+  }
+  .infor_image_footer img{
+    width: 40px;
+  }
+  .footer_support{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .infor_support{
+    margin-top: 20px;
+    margin-top: 72px;
+  }
+  .infor_support>p{
+    font-size: 14px;
+    color: #8E8B8B;
+    margin-top: 10px;
+  }
+  .footer_app{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_app>p{
+    position: absolute;
+    top: 152px;
+    font-size: 20px;
+    color: #444343;
+    font-weight: bold;
+  }
+  .app_Content{
+    background-color: #E3E3E3;
+    width: 240px;
+    height: 56px;
+    border: solid 1px #575656;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 2px 1px rgba(170, 170, 170, 0.705);
+    position: absolute;
+    top: 200px;
+  }
+  .app_Content img{
+    width: 40px;
+  }
+  .content_download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 7px;
+  }
+  .content_download>h1{
+    font-size: 14px;
+    font-weight: 100;
+    color: #7E7B7B;
+  }
+  .content_download>p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #7E7B7B;
+    font-weight: 400;
+  }
+  #Android{
+    top: 270px;
+  }
+  .footer_image{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .footer_image>h1{
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    color: #444343;
+    font-weight: bold;
+  }
+  .footer_image>p{
+    position: absolute;
+    top: 75px;
+    font-size: 20px;
+    color: #444343;
+    font-weight: bold;
+  }
+  .footer_image img{
+    height: 284px;
+    position: absolute;
+    top: 124px;
+  }
+  .copy_right {
+    width: 100%;
+    height: 42px;
+    background-color: #FDB13E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Stylesheet for modal login form */
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
