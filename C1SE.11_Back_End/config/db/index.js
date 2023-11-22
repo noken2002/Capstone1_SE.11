@@ -12,7 +12,7 @@ const MSSQLpool = new mssql.ConnectionPool({
   //password: process.env.MSSQL_DATABASE_PASSWORD,
   driver: 'msnodesqlv8',
   options: {
-    trustedConnection: true,
+    trustedConnection: false,
   },
 });
 
