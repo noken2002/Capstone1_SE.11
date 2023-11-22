@@ -18,4 +18,5 @@ router.post('/generateTicket',multer().none(), async (req, res) => {
     TicketController.generateTicket(req, res);
 });
 
+
 module.exports = router;

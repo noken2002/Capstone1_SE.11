@@ -55,18 +55,16 @@ class TicketController {
         // trip_id
         // customer_id_
         // coach_id
-        // departure_datetime
+        // departure_date
         // arrival_datetime
         // seat_number
         // price
         // status_
 
         let {
-            partner_id,
             trip_id,
-            customer_id_,
-            coach_id,
-            departure_datetime,
+            customer_id,
+            departure_date,
             arrival_datetime,
             seat_number,
             price } = req.body;
@@ -78,22 +76,16 @@ class TicketController {
 
         const query = `INSERT INTO Tickets (
             ticket_id, 
-            partner_id, 
             trip_id, 
             customer_id_, 
-            coach_id, 
-            departure_datetime, 
-            arrival_datetime, 
+            departure_date, 
             seat_number, 
             price, 
             status_) values(
                 '${ticket_id}', 
-                '${partner_id}', 
                 '${trip_id}', 
-                '${customer_id_}', 
-                '${coach_id}', 
-                '${departure_datetime}', 
-                '${arrival_datetime}', 
+                '${customer_id}', 
+                '${departure_date}', 
                 '${seat_number}', 
                 ${price}, 
                 ${status}
@@ -119,10 +111,67 @@ class TicketController {
     async generateTicket(req, res) {
         let {
             trip_id,
+            customer_id,
+            departure_date,
+            seat,
+            price
+        } = req.body;
+
+        let results = [];
+
+        let query = `INSERT INTO Tickets (
+            ticket_id, 
+            trip_id, 
+            customer_id_, 
+            departure_datetime, 
+            seat_number, 
+            price, 
+            status_) values`;
+
+        let ticket_id_arr = []
+
+        for (const seat_number of seat) {
+            let status = 0;
+            let ticket_id = uuidv4();
+
+            ticket_id_arr.push(ticket_id)
+            query += `(
+                    '${ticket_id}', 
+                    '${trip_id}', 
+                    '${customer_id}', 
+                    '${departure_date}', 
+                    '${seat_number}', 
+                    ${price}, 
+                    ${status}
+                ),`;
+        }
+
+        query = query.slice(0, -1)
+        console.log(query)
+
+        db.query(query, (err, result) => {
+            if (err) {
+                res.send({
+                    status: 500,
+                    data: err
+                });
+            } else {
+                res.send({
+                    status: 200,
+                    data: ticket_id_arr
+                });
+            };
+        });
+
+    }
+
+    async generateAllTicket(req, res) {
+        let {
+            trip_id,
             partner_id,
             customer_id,
             coach_id,
-            departure_datetime,
+            departure_date,
             arrival_datetime,
             seat,
             price
@@ -132,11 +181,9 @@ class TicketController {
 
         let query = `INSERT INTO Tickets (
             ticket_id, 
-            partner_id, 
             trip_id, 
-            customer_id_, 
-            coach_id, 
-            departure_datetime, 
+            customer_id, 
+            departure_date, 
             arrival_datetime, 
             seat_number, 
             price, 
@@ -151,11 +198,9 @@ class TicketController {
             ticket_id_arr.push(ticket_id)
             query += `(
                     '${ticket_id}', 
-                    '${partner_id}', 
                     '${trip_id}', 
                     '${customer_id}', 
-                    '${coach_id}', 
-                    '${departure_datetime}', 
+                    '${departure_date}', 
                     '${arrival_datetime}', 
                     '${seat_number}', 
                     ${price}, 
@@ -182,6 +227,9 @@ class TicketController {
 
     }
 
+
 }
 
 module.exports = new TicketController;
+
+// infot Ticket

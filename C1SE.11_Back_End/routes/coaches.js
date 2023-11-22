@@ -12,8 +12,8 @@ router.get('/:id', async (req, res) => {
 
 router.get('/get/getCoach', async (req, res) => {
     console.log("req", req.query)
-    const { coach_id, trip_id } = req.query
-    const result = await CoachController.getCoachAndTiketById2(coach_id, trip_id);
+    const { trip_id } = req.query
+    const result = await CoachController.getCoachAndTiketById2(trip_id);
     console.log("Result", result);
     res.send(result)
 

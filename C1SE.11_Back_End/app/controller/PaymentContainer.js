@@ -5,11 +5,8 @@ var QRCode = require('qrcode')
 class PaymentController {
 
     async storePayment(req, res) {
-
-        
         let {
             ticket_id,
-            customer_id,
             origin,
             destination,
             departure_datetime,
@@ -23,7 +20,7 @@ class PaymentController {
         
         let qrContent = 'http://127.0.0.1:5500/C1SE.11_Front_End/Assets/Driver_FE/showTicket.html?id=';
 
-        let query = `INSERT INTO Payments (payment_id, ticket_id, customer_id, qr_code_image, origin, destination, departure_datetime, booking_date, payment_date, amount, payment_method)
+        let query = `INSERT INTO Payments (payment_id, ticket_id, qr_code_image, origin, destination, departure_datetime, booking_date, payment_date, amount, payment_method)
         VALUES`
             
         let qr_arr = []
@@ -55,7 +52,6 @@ class PaymentController {
 
            query += `('${payment_id}', 
            '${ticket_id_}', 
-           '${customer_id}', 
            '${qr_image}', 
            '${origin}', 
            '${destination}', 
