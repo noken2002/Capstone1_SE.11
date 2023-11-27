@@ -7,11 +7,13 @@ dotenv.config();
 
 const MSSQLpool = new mssql.ConnectionPool({
   server: process.env.MSSQL_SERVER_NAME,
-    database: process.env.MSSQL_DATABASE_NAME,
-    driver: 'msnodesqlv8',
-    options: {
-        trustedConnection: true
-    }
+  database: process.env.MSSQL_DATABASE_NAME,
+  user: process.env.MSSQL_DATABASE_USERNAME,
+  password: process.env.MSSQL_DATABASE_PASSWORD,
+  driver: 'msnodesqlv8',
+  options: {
+    trustedConnection: false,
+  },
 });
 
 // const MSSQLpool = new mssql.ConnectionPool('Driver={ODBC Driver 17 for SQL Server};Server=DESKTOP-QORQO49\SQLEXPRESS;Database=expressTickets;Trusted_Connection=yes;');

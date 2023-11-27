@@ -4,6 +4,7 @@ const coahesRoutes = require('./coaches');
 const customerRoutes = require('./customer');
 const paymentRoutes = require('./payments');
 const tripRoutes = require('./trips')
+const driverRoutes = require('./driverActivities')
 
 function route(app) {
     app.get('/', (req, res) => {
@@ -15,6 +16,7 @@ function route(app) {
     app.use('/customers', customerRoutes);
     app.use('/payment', paymentRoutes);
     app.use('/trip', tripRoutes);
+    app.use('/driver', driverRoutes)
 }
 
 module.exports = route;
