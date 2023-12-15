@@ -34,13 +34,13 @@
         <div class="col-lg-2">
             <div class="sidebar-menu">
                 <ul class="list-menu">
-                    <li class="icon-menu"><i class="fa-solid fa-house"></i>Trang chủ</li>
-                    <li class="icon-menu"><i class="fa-solid fa-car"></i>Quản lý xe</li>
-                    <li class="icon-menu"><i class="fa-solid fa-user"></i>Quản lý Tài xế</li>
-                    <li class="icon-menu"><i class="fa-solid fa-ticket"></i>Quản lý vé</li>
-                    <li class="icon-menu"><i class="fa-solid fa-money-bill-transfer"></i>Doanh thu</li>
-                    <li class="icon-menu"><i class="fa-solid fa-headset"></i>Hỗ trợ</li>
-                    <li class="icon-menu"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</li>
+                    <li class="icon-menu" id="id_menu_home"><i class="fa-solid fa-car"></i>Trang chủ</li>
+                    <li class="icon-menu" id="id_menu_coach"><i class="fa-solid fa-house"></i>Quản lý xe</li>
+                    <li class="icon-menu" id="id_menu_driver"><i class="fa-solid fa-user"></i>Quản lý Tài xế</li>
+                    <li class="icon-menu" id="id_menu_ticket"><i class="fa-solid fa-ticket"></i>Quản lý vé</li>
+                    <li class="icon-menu" id="id_menu_revenue"><i class="fa-solid fa-money-bill-transfer"></i>Doanh thu</li>
+                    <li class="icon-menu" id="id_menu_support"><i class="fa-solid fa-headset"></i>Hỗ trợ</li>
+                    <li class="icon-menu" id="id_menu_logout"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</li>
                 </ul>
             </div>
         </div>
@@ -56,8 +56,8 @@
             <div class="row">
                 <div class="title-table">
                     <h5>Quản lý tài xế</h5>
-                    <button class="btn-add">Thêm</button>
-                    <img class="undo" src="./public/images/Undo.png" alt="">
+                    <button class="btn-add" id="id_btn_add">Thêm</button>
+                    <img class="undo" id="id_undo" src="./public/images/Undo.png" alt="">
                 </div>
             </div>
             <table class="table table-custom  table-bordered text-center align-items-center align-middle">
@@ -66,9 +66,9 @@
                     <th scope="col">STT</th>
                     <th scope="col">Tên tài xế</th>
                     <th scope="col">Năm sinh</th>
-                    <th scope="col">Trạng thái</th>
-                    <th scope="col">Hành động</th>
-                    <th scope="col">Hành động</th>
+                    <th scope="col">Quê quán</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Điểm</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -95,4 +95,5 @@
 
 
 </body>
+<script src="./quanlytaixe.js"> </script>
 </html>
