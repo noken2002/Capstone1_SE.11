@@ -161,37 +161,6 @@ function getDayOfWeek() {
   const dateInput = document.getElementById("birthday");
   dateInput.addEventListener("change", updateDayOfWeek);
 
-async function clickLogin(){
-    const data = {
-        username,
-        password
-    };
-    // Gửi POST request sử dụng Axios
-    await axios.post('http://localhost:9000/login', data)
-    .then((response) => {
-        if (response.data.length > 0) {
-            localStorage.setItem('keyAccount', JSON.stringify(response.data));
-            // Đối chiếu vai trò và xử lý tương ứng
-            if (response.data[0].role === 'user') {
-                // Nếu là người dùng, chuyển hướng đến trang người dùng
-                window.location.href = '';
-            } else if (response.data[0].role === 'admin') {
-                // Nếu là admin, chuyển hướng đến trang admin
-                window.location.href = '';
-            } 
-            else if (response.data[0].role === 'driver') {
-                // Nếu là tài xế, chuyển hướng đến trang tài xế
-                window.location.href = '';
-            } else {
-                // Nếu là đối tác, chuyển hướng đến trang đối tác
-                window.location.href = `.../C1SE.11_Front_End/Assets/Partner_FE/Home/index.html`;
-            }
-        } else {
-            // Xử lý trường hợp không tìm thấy người dùng
-            res.send('Không tồn tại tài khoản');
-        }
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
-}
+
+
+
